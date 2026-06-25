@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Roxane B. Salonen — Writer · Speaker · Host of Matters of Soul Importance</title>
+<meta name="description" content="Welcome to Peace Garden Passage. Roxane B. Salonen — author of Finding Flannery, columnist, speaker, and host of the Matters of Soul Importance podcast, finding grace in the ordinary from Fargo, North Dakota." />
+<meta property="og:title" content="Roxane B. Salonen — Writer · Speaker · Host" />
+<meta property="og:description" content="Finding grace in the ordinary. Books, columns, speaking, and the Matters of Soul Importance podcast." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* a Northern Plains garden in bloom */
+    --cream:#FBF6EA;
+    --cream-2:#F3ECDA;
+    --paper-lift:#FFFDF6;
+    --sky:#DCEAF0;
+    --sky-2:#BFD8E6;
+    --garden:#1E4031;       /* deep garden green - primary */
+    --garden-2:#2C5A40;
+    --leaf:#4E7A52;
+    --sage:#8AA081;
+    --wheat:#E0A92E;        /* golden */
+    --honey:#C8841F;
+    --poppy:#D85A3C;        /* coral pop */
+    --rose:#D97C86;         /* wild prairie rose */
+    --rose-deep:#C25E72;
+    --plum:#6E3551;         /* berry depth */
+    --corn:#5C84B1;         /* cornflower / prairie sky */
+    --ink:#2A2922;
+    --ink-2:#56544A;
+    --line:#E2D8C2;
+    --line-2:#D2C7AC;
+    --maxw:1180px;
+    --ease:cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;font-weight:400;line-height:1.07;margin:0;letter-spacing:-.012em}
+  a{color:var(--garden);text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  ::selection{background:var(--wheat);color:#2a2410}
+  :focus-visible{outline:2.5px solid var(--poppy);outline-offset:3px;border-radius:3px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .eyebrow{font-weight:700;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--honey)}
+  .ital{font-family:"Fraunces";font-style:italic}
+  section{position:relative}
+
+  /* ---------- nav ---------- */
+  header.nav{position:sticky;top:0;z-index:70;background:rgba(251,246,234,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Fraunces";font-size:1.18rem;font-weight:500;color:var(--garden);white-space:nowrap}
+  .brand .bloom{width:24px;height:24px;flex:none}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-size:.82rem;font-weight:600;letter-spacing:.03em;color:var(--ink-2);transition:color .2s}
+  .nav-links a:hover{color:var(--garden)}
+  .nav-cta{background:var(--poppy);color:#fff!important;padding:9px 18px;border-radius:40px;font-size:.78rem;letter-spacing:.03em;transition:background .2s,transform .2s}
+  .nav-cta:hover{background:#c24a2e;transform:translateY(-1px)}
+  .menu-btn{display:none;background:none;border:0;color:var(--garden);cursor:pointer;padding:6px}
+  .menu-btn svg{width:26px;height:26px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.92rem;padding:13px 24px;border-radius:44px;transition:transform .2s var(--ease),box-shadow .2s,background .2s;cursor:pointer}
+  .btn svg{width:18px;height:18px}
+  .btn-poppy{background:var(--poppy);color:#fff;box-shadow:0 10px 26px rgba(216,90,60,.28)}
+  .btn-poppy:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(216,90,60,.34)}
+  .btn-green{background:var(--garden);color:#fff;box-shadow:0 10px 26px rgba(30,64,49,.22)}
+  .btn-green:hover{transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--garden);border:1.5px solid var(--line-2)}
+  .btn-ghost:hover{border-color:var(--garden);transform:translateY(-2px)}
+
+  /* ---------- hero ---------- */
+  .hero{background:
+      radial-gradient(1100px 520px at 78% -8%, var(--sky) 0%, transparent 60%),
+      linear-gradient(180deg,#FCF8EE 0%, var(--cream) 62%);
+    padding:64px 0 0;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center;padding-bottom:34px}
+  .ribbon{display:inline-flex;align-items:center;gap:9px;background:var(--paper-lift);border:1px solid var(--line);border-radius:40px;padding:7px 16px 7px 8px;font-size:.82rem;color:var(--ink-2);box-shadow:0 4px 14px rgba(40,40,30,.05);margin-bottom:22px}
+  .ribbon b{color:var(--garden);font-weight:700}
+  .ribbon .wb{width:24px;height:24px;border-radius:50%;background:var(--rose);display:grid;place-items:center;flex:none}
+  h1.hero-h1{font-size:clamp(2.7rem,5.6vw,4.5rem);line-height:1.02;letter-spacing:-.02em;color:var(--garden);margin-bottom:18px}
+  .lede{font-size:1.18rem;color:var(--ink-2);max-width:33em;margin:0 0 30px}
+  .lede b{color:var(--ink);font-weight:600}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* portrait art */
+  .portrait-art{position:relative;justify-self:center;width:min(420px,100%)}
+  .portrait-art .blob{position:absolute;inset:-6% -8% -10% -6%;background:
+      radial-gradient(circle at 30% 30%, var(--sky-2), transparent 70%),
+      radial-gradient(circle at 75% 80%, #F4D9B0, transparent 70%);
+    border-radius:48% 52% 55% 45%/52% 46% 54% 48%;filter:blur(2px);z-index:0}
+  .portrait-art .frame{position:relative;z-index:2;border-radius:50% 50% 48% 52%/50%;overflow:hidden;border:6px solid var(--paper-lift);box-shadow:0 26px 60px rgba(40,40,30,.18)}
+  .portrait-art .frame img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%}
+  .sprig-top{position:absolute;width:78px;height:78px;top:-30px;right:6px;z-index:3;transform:rotate(12deg)}
+  .sprig-bot{position:absolute;width:64px;height:64px;bottom:-18px;left:-14px;z-index:3;transform:rotate(-18deg);color:var(--poppy)}
+
+  /* prairie garden band — signature */
+  .garden-band{line-height:0}
+  .garden-band svg{width:100%;height:auto;display:block}
+  @keyframes sway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(3deg)}}
+  .sway{transform-box:fill-box;transform-origin:bottom center;animation:sway 5.5s var(--ease) infinite}
+  .sway.s2{animation-duration:6.8s;animation-delay:-1.4s}
+  .sway.s3{animation-duration:7.6s;animation-delay:-3s}
+
+  /* ---------- section frame ---------- */
+  .sec{padding:84px 0}
+  .sec-head{max-width:640px;margin-bottom:42px}
+  .sec-head h2{font-size:clamp(2rem,3.6vw,2.8rem);color:var(--garden);margin:12px 0 14px}
+  .sec-head p{color:var(--ink-2);font-size:1.08rem;margin:0}
+
+  /* books */
+  .books{background:linear-gradient(180deg,var(--cream) 0%, var(--cream-2) 100%)}
+  .book-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+  .book{background:var(--paper-lift);border:1px solid var(--line);border-radius:14px;padding:20px;transition:transform .28s var(--ease),box-shadow .28s}
+  .book:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(40,40,30,.12)}
+  .book .cover{border-radius:8px;overflow:hidden;box-shadow:0 12px 26px rgba(40,40,30,.16);margin-bottom:16px;background:#fff}
+  .book .cover img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center}
+  .book h3{font-size:1.12rem;color:var(--garden);margin-bottom:6px;line-height:1.15}
+  .book p{font-size:.9rem;color:var(--ink-2);margin:0;line-height:1.5}
+  .books-more{margin-top:32px;font-size:.98rem;color:var(--ink-2)}
+  .books-more b{color:var(--garden)}
+
+  /* speaking */
+  .speaking{background:var(--garden);color:#F4EFE2}
+  .speaking .eyebrow{color:var(--wheat)}
+  .speaking h2{color:#fff}
+  .speak-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+  .speaking p{color:#D9E3D2}
+  .speak-list{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:13px}
+  .speak-list li{display:flex;gap:12px;align-items:flex-start;color:#E8EFE1;font-size:1rem}
+  .speak-list .tick{width:22px;height:22px;border-radius:50%;background:rgba(224,169,46,.2);display:grid;place-items:center;flex:none;margin-top:1px}
+  .speak-list .tick svg{width:13px;height:13px;stroke:var(--wheat)}
+  .speak-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:30px}
+  .speak-card h3{color:#fff;font-size:1.5rem;margin-bottom:8px}
+  .speak-card .topics{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 24px}
+  .speak-card .topics span{font-size:.78rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#EDE4CF;padding:6px 13px;border-radius:30px}
+
+  /* writing */
+  .writing{background:linear-gradient(180deg,var(--sky) 0%, #EAF1F2 100%)}
+  .writing .eyebrow{color:var(--corn)}
+  .writing h2{color:#274B63}
+  .write-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
+  .write-card{background:var(--paper-lift);border:1px solid #D6E2E6;border-radius:16px;padding:26px;transition:transform .26s var(--ease)}
+  .write-card:hover{transform:translateY(-5px)}
+  .write-card .tag{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--corn)}
+  .write-card h3{font-size:1.22rem;color:#274B63;margin:10px 0 8px}
+  .write-card p{font-size:.95rem;color:var(--ink-2);margin:0 0 16px}
+  .arrow-link{font-weight:600;color:var(--garden);display:inline-flex;align-items:center;gap:6px}
+  .arrow-link svg{width:16px;height:16px;transition:transform .2s}
+  .arrow-link:hover svg{transform:translateX(3px)}
+
+  /* podcast */
+  .podcast{background:linear-gradient(120deg,#F6E2D6 0%, var(--cream) 70%)}
+  .podcast .eyebrow{color:var(--poppy)}
+  .pod-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:center}
+  .pod-disc{position:relative;justify-self:center;width:min(300px,80%);aspect-ratio:1/1;border-radius:50%;background:
+      repeating-radial-gradient(circle at 50% 50%, #2a2520 0 2px, #34302a 2px 5px);
+    display:grid;place-items:center;box-shadow:0 24px 50px rgba(40,40,30,.28)}
+  .pod-disc .label{width:46%;height:46%;border-radius:50%;background:radial-gradient(circle at 50% 35%, var(--poppy), var(--rose-deep));display:grid;place-items:center;color:#fff;text-align:center;font-family:"Fraunces";font-style:italic;font-size:.86rem;padding:10px;line-height:1.2;box-shadow:inset 0 0 0 4px rgba(255,255,255,.18)}
+  .pod-disc::after{content:"";position:absolute;width:7%;height:7%;border-radius:50%;background:var(--cream);box-shadow:0 0 0 3px rgba(0,0,0,.25)}
+  .podcast h2{color:var(--plum)}
+
+  /* about */
+  .about{background:var(--cream-2)}
+  .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:center}
+  .about-photo{border-radius:18px;overflow:hidden;border:6px solid var(--paper-lift);box-shadow:0 22px 50px rgba(40,40,30,.16);transform:rotate(-1.5deg)}
+  .about-photo img{width:100%;display:block}
+  .about h2{color:var(--garden);font-size:clamp(2rem,3.4vw,2.7rem)}
+  .about .ital{color:var(--rose-deep)}
+  .about p{color:var(--ink-2);margin:18px 0 0}
+  .about p:first-of-type{margin-top:22px}
+  .seven{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-family:"Fraunces";font-style:italic;color:var(--garden);font-size:1.05rem}
+
+  /* footer */
+  footer{background:var(--garden);color:#CFD9C8;padding:64px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .foot-brand{display:flex;align-items:center;gap:11px;font-family:"Fraunces";font-size:1.3rem;color:#fff;margin-bottom:14px}
+  .foot-brand .bloom{width:24px;height:24px}
+  .foot-bless{font-family:"Fraunces";font-style:italic;color:#E7DEC9;max-width:24em;line-height:1.6}
+  footer h5{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--wheat);margin:0 0 16px}
+  footer ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+  footer ul a{color:#D7E0CC;font-size:.95rem;transition:color .2s}
+  footer ul a:hover{color:#fff}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.82rem;color:#9FB096}
+
+  /* reveal */
+  .reveal,.stagger>*{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in,.stagger.in>*{opacity:1;transform:none}
+  .stagger.in>*:nth-child(2){transition-delay:.08s}
+  .stagger.in>*:nth-child(3){transition-delay:.16s}
+  .stagger.in>*:nth-child(4){transition-delay:.24s}
+
+  /* responsive */
+  @media(max-width:900px){
+    .menu-btn{display:block}
+    .nav-links{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper-lift);border-bottom:1px solid var(--line);padding:8px 20px 18px;box-shadow:0 24px 40px rgba(40,40,30,.14);transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s,transform .22s,visibility .22s}
+    .nav-links.open{transform:none;opacity:1;visibility:visible;pointer-events:auto}
+    .nav-links a{padding:13px 4px;border-bottom:1px solid var(--line);font-size:.95rem}
+    .nav-cta{margin-top:12px;text-align:center;border-radius:40px}
+    .hero-grid,.speak-grid,.pod-grid,.about-grid{grid-template-columns:1fr;gap:34px}
+    .portrait-art{order:-1;width:min(320px,76%)}
+    .book-grid{grid-template-columns:1fr 1fr;gap:20px}
+    .write-grid{grid-template-columns:1fr}
+    .pod-grid .pod-disc{order:-1}
+  }
+  @media(max-width:520px){
+    .wrap{padding:0 22px}
+    .book-grid{grid-template-columns:1fr 1fr;gap:16px}
+    .foot-grid{grid-template-columns:1fr;gap:30px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+    .reveal,.stagger>*{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- flower symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rose" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(0 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(45 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(90 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(135 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(180 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(225 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(270 50 50)"/>
+      <ellipse cx="50" cy="24" rx="8" ry="18" transform="rotate(315 50 50)"/>
+    </g>
+    <circle cx="50" cy="50" r="13" fill="#E0A92E"/>
+    <circle cx="50" cy="50" r="6" fill="#5a3a1a"/>
+  </symbol>
+</svg>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><svg class="bloom" viewBox="0 0 100 100" style="color:var(--rose)"><use href="#rose"/></svg>Roxane&nbsp;B.&nbsp;Salonen</a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#books">Books</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#writing">Writing</a>
+      <a href="#podcast">Podcast</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#speaking">Invite to speak</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="ribbon"><span class="wb"><svg width="13" height="13" viewBox="0 0 24 24" fill="#fff"><path d="M12 21s-7-4.35-9.5-8.5C.8 9.4 2.2 6 5.5 6 7.4 6 9 7.2 12 10c3-2.8 4.6-4 6.5-4 3.3 0 4.7 3.4 3 6.5C19 16.65 12 21 12 21z"/></svg></span><span>Peace Garden Passage — <b>a portal of petals</b></span></div>
+        <h1 class="hero-h1">Finding grace in the <span class="ital">ordinary.</span></h1>
+        <p class="lede">The writing, speaking, and soul-conversations of <b>Roxane B. Salonen</b> — author, columnist, and host of <span class="ital">Matters of Soul Importance</span>, from the wide prairie of Fargo, North Dakota.</p>
+        <div class="hero-cta">
+          <a class="btn btn-poppy" href="#speaking">Invite Roxane to speak <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#writing">Read the latest</a>
+        </div>
+      </div>
+      <div class="portrait-art reveal">
+        <div class="blob"></div>
+        <svg class="sprig-top" viewBox="0 0 100 100" style="color:var(--rose)"><use href="#rose"/></svg>
+        <div class="frame"><img src="images/portrait.jpg" alt="Roxane B. Salonen" width="900" height="900"></div>
+        <svg class="sprig-bot" viewBox="0 0 100 100"><use href="#rose"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ILLUSTRATED PRAIRIE GARDEN -->
+  <div class="garden-band" aria-hidden="true">
+    <svg viewBox="0 0 1200 240" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- hills -->
+      <path d="M0 110 Q300 74 600 100 T1200 92 L1200 240 L0 240 Z" fill="#8AA081" opacity=".55"/>
+      <path d="M0 145 Q260 112 560 138 T1200 130 L1200 240 L0 240 Z" fill="#4E7A52" opacity=".85"/>
+      <path d="M0 180 Q300 160 640 176 T1200 170 L1200 240 L0 240 Z" fill="#2C5A40"/>
+      <!-- wheat (left) -->
+      <g stroke="#caa23e" stroke-width="3" fill="none" stroke-linecap="round">
+        <g class="sway"><path d="M120 240 Q116 168 110 132"/><circle cx="110" cy="128" r="6" fill="#E0A92E" stroke="none"/></g>
+        <g class="sway s2"><path d="M142 240 Q146 172 152 138"/><circle cx="152" cy="134" r="6" fill="#E0A92E" stroke="none"/></g>
+        <g class="sway s3"><path d="M98 240 Q92 176 86 146"/><circle cx="86" cy="142" r="5" fill="#caa23e" stroke="none"/></g>
+      </g>
+      <!-- coneflowers (left-mid) -->
+      <g class="sway s2"><path d="M250 240 L250 150" stroke="#3c6b48" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <g transform="translate(250 138)"><circle r="9" fill="#6E3551"/>
+          <g fill="#D97C86"><ellipse cx="0" cy="-16" rx="4.5" ry="11"/><ellipse cx="0" cy="-16" rx="4.5" ry="11" transform="rotate(60)"/><ellipse cx="0" cy="-16" rx="4.5" ry="11" transform="rotate(120)"/><ellipse cx="0" cy="-16" rx="4.5" ry="11" transform="rotate(180)"/><ellipse cx="0" cy="-16" rx="4.5" ry="11" transform="rotate(240)"/><ellipse cx="0" cy="-16" rx="4.5" ry="11" transform="rotate(300)"/></g></g></g>
+      <!-- poppy (center) -->
+      <g class="sway s3"><path d="M620 240 L620 142" stroke="#3c6b48" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <g transform="translate(620 130)"><circle r="7" fill="#5a3a1a"/>
+          <g fill="#D85A3C"><ellipse cx="0" cy="-14" rx="6" ry="12"/><ellipse cx="0" cy="-14" rx="6" ry="12" transform="rotate(72)"/><ellipse cx="0" cy="-14" rx="6" ry="12" transform="rotate(144)"/><ellipse cx="0" cy="-14" rx="6" ry="12" transform="rotate(216)"/><ellipse cx="0" cy="-14" rx="6" ry="12" transform="rotate(288)"/></g></g></g>
+      <!-- meadowlark (right) -->
+      <g transform="translate(910 96)">
+        <ellipse cx="0" cy="0" rx="26" ry="18" fill="#7a5a2a"/>
+        <path d="M-26 -2 Q-44 -8 -54 4 Q-40 6 -24 6 Z" fill="#6b4d22"/>
+        <circle cx="20" cy="-8" r="11" fill="#8a6630"/>
+        <path d="M14 -4 Q6 0 14 4 Z" fill="#E0A92E"/>
+        <path d="M18 -2 q10 4 0 9 q-9 -2 -6 -9 Z" fill="#F2D24A"/>
+        <circle cx="24" cy="-10" r="2" fill="#1c140a"/>
+        <path d="M28 30 l-6 14 m4 -14 l2 14" stroke="#5a3a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- prairie roses (right-mid) -->
+      <g class="sway"><path d="M1030 240 L1030 150" stroke="#3c6b48" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <g transform="translate(1030 140)"><g fill="#D97C86"><circle cx="0" cy="-12" r="7"/><circle cx="11" cy="-4" r="7"/><circle cx="7" cy="9" r="7"/><circle cx="-7" cy="9" r="7"/><circle cx="-11" cy="-4" r="7"/></g><circle r="6" fill="#E0A92E"/></g></g>
+      <!-- back grasses -->
+      <g stroke="#3c6b48" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85">
+        <path class="sway" d="M360 240 Q356 182 350 156"/><path class="sway s2" d="M380 240 Q384 186 392 160"/>
+        <path class="sway s3" d="M760 240 Q756 184 750 158"/><path class="sway" d="M780 240 Q786 188 794 162"/>
+        <path class="sway s2" d="M1140 240 Q1136 182 1130 154"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- BOOKS -->
+<section class="sec books" id="books">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">The Books</div>
+      <h2>Stories that find the holy in the homely.</h2>
+      <p>From a travel memoir on Flannery O'Connor to devotionals, prairie picture books, and companionship for hard roads — Roxane writes across the seasons of a reader's life.</p>
+    </div>
+    <div class="book-grid stagger">
+      <article class="book">
+        <div class="cover"><img src="images/book-flannery.jpg" alt="Finding Flannery book cover"></div>
+        <h3>Finding Flannery</h3>
+        <p>A travel memoir exploring the mystique of Southern Gothic writer Flannery O'Connor and the legacy she left us all.</p>
+      </article>
+      <article class="book">
+        <div class="cover"><img src="images/book-wwmd.jpg" alt="What Would Monica Do? book cover"></div>
+        <h3>What Would Monica Do?</h3>
+        <p>Consolation and hope for those carrying the cross of a loved one away from the Faith — with Patti Maguire Armstrong.</p>
+      </article>
+      <article class="book">
+        <div class="cover"><img src="images/book-calledbyname.jpg" alt="Called by Name devotional"></div>
+        <h3>Called by Name</h3>
+        <p>Daily devotions that meet Catholic women in the ordinary and call them, by name, toward grace.</p>
+      </article>
+      <article class="book">
+        <div class="cover"><img src="images/book-12days.jpg" alt="The Twelve Days of Christmas in North Dakota"></div>
+        <h3>12 Days of Christmas in North Dakota</h3>
+        <p>A playful prairie Christmas for young readers, illustrated by Jess Golden.</p>
+      </article>
+    </div>
+    <p class="books-more reveal">Also by Roxane — <b>P is for Peace Garden: A North Dakota Alphabet</b>, <b>First Salmon</b>, and her newest children's titles. <a class="arrow-link" href="#writing">Find them all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<!-- SPEAKING -->
+<section class="sec speaking" id="speaking">
+  <div class="wrap">
+    <div class="speak-grid">
+      <div class="reveal">
+        <div class="eyebrow">Speaking</div>
+        <h2 style="font-size:clamp(2rem,3.6vw,2.8rem);margin:12px 0 16px">Invite Roxane to your event.</h2>
+        <p>For more than two decades, Roxane has spoken to women's groups, parishes, conferences, and writers' gatherings — weaving story, faith, and humor into talks that send people home lighter and more hopeful.</p>
+        <ul class="speak-list">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Keynotes &amp; retreats for women of faith</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Writing &amp; storytelling workshops</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Parish missions &amp; book talks</li>
+        </ul>
+        <a class="btn btn-poppy" href="mailto:roxanebsalonen@gmail.com?subject=Speaking%20inquiry">Check her availability <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="speak-card reveal">
+        <h3>What she speaks on</h3>
+        <p style="font-size:.97rem">Finding grace in the ordinary, the writing life, the witness of Flannery O'Connor, motherhood, and walking with those whose loved ones have left the Faith.</p>
+        <div class="topics"><span>Faith &amp; family</span><span>The writing life</span><span>Flannery O'Connor</span><span>Hope &amp; healing</span><span>Prairie spirituality</span></div>
+        <a class="btn btn-green" href="mailto:roxanebsalonen@gmail.com?subject=Speaking%20inquiry" style="width:100%;justify-content:center">Email Roxane</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WRITING -->
+<section class="sec writing" id="writing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Writing</div>
+      <h2>Columns, essays &amp; the Peace Garden Passage.</h2>
+      <p>New reflections most weeks — on faith, family, and the quiet drama of life on the Northern Plains.</p>
+    </div>
+    <div class="write-grid stagger">
+      <article class="write-card">
+        <div class="tag">Substack</div>
+        <h3>Peace Garden Passage</h3>
+        <p>Roxane's home for essays and soul-letters — subscribe to read along, "a portal of petals."</p>
+        <a class="arrow-link" href="https://roxanesalonen.substack.com/" target="_blank" rel="noopener">Read on Substack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+      </article>
+      <article class="write-card">
+        <div class="tag">Column</div>
+        <h3>Sidewalk Stories</h3>
+        <p>Her long-running column bearing gentle, honest witness from the sidewalk and beyond.</p>
+        <a class="arrow-link" href="https://roxanesalonen.substack.com/" target="_blank" rel="noopener">Latest columns <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="write-card">
+        <div class="tag">Memoir</div>
+        <h3>Finding Flannery</h3>
+        <p>The travel memoir tracing Flannery O'Connor's Southern roads and enduring legacy.</p>
+        <a class="arrow-link" href="https://enroutebooksandmedia.com/findingflannery/" target="_blank" rel="noopener">About the book <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PODCAST -->
+<section class="sec podcast" id="podcast">
+  <div class="wrap">
+    <div class="pod-grid">
+      <div class="pod-disc reveal"><div class="label">Matters of Soul Importance</div></div>
+      <div class="reveal">
+        <div class="eyebrow">The Podcast</div>
+        <h2 style="font-size:clamp(2rem,3.6vw,2.8rem);margin:12px 0 14px">Matters of Soul Importance.</h2>
+        <p style="color:var(--ink-2)">Honest, warm conversations about the things that matter most — faith, family, calling, and grace — with Roxane and her guests.</p>
+        <div class="hero-cta" style="margin-top:24px">
+          <a class="btn btn-poppy" href="https://open.spotify.com/show/296bQyPuaHgJTR0hAiP6rf" target="_blank" rel="noopener">Listen on Spotify <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal"><img src="images/family.jpg" alt="The Salonen family"></div>
+      <div class="reveal">
+        <div class="eyebrow">About Roxane</div>
+        <h2>Would it surprise you to hear I lead a <span class="ital">double — even triple — life?</span></h2>
+        <p>By turns I'm a writer at the keyboard, a speaker at the podium, a radio and podcast host behind the mic — and, always, a mother in a busy prairie kitchen. The thread through all of it is the same: paying attention to the ordinary until it gives up its grace.</p>
+        <p>I write and speak from Fargo, North Dakota — the Peace Garden State — where the meadowlark sings and the wild rose blooms along the road.</p>
+        <span class="seven"><svg width="20" height="20" viewBox="0 0 100 100" style="color:var(--rose)"><use href="#rose"/></svg>Wife, and mother to the Salonen Seven.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><svg class="bloom" viewBox="0 0 100 100" style="color:var(--rose)"><use href="#rose"/></svg>Roxane B. Salonen</div>
+        <p class="foot-bless">"Hello, friend — I pray your visit brings refreshment. Blessings &amp; peace."</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#podcast">Podcast</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow &amp; read</h5>
+        <ul>
+          <li><a href="https://roxanesalonen.substack.com/" target="_blank" rel="noopener">Substack ↗</a></li>
+          <li><a href="https://open.spotify.com/show/296bQyPuaHgJTR0hAiP6rf" target="_blank" rel="noopener">Podcast ↗</a></li>
+          <li><a href="https://enroutebooksandmedia.com/findingflannery/" target="_blank" rel="noopener">Finding Flannery ↗</a></li>
+          <li><a href="mailto:roxanebsalonen@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Roxane B. Salonen · Fargo, North Dakota</span>
+      <span>Peace Garden Passage</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
+  mb&&mb.addEventListener('click',function(){var o=nl.classList.toggle('open');mb.setAttribute('aria-expanded',o?'true':'false');});
+  nl&&nl.addEventListener('click',function(e){if(e.target.tagName==='A'){nl.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.14});
+  document.querySelectorAll('.reveal,.stagger').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
