@@ -300,3 +300,23 @@
 .voc-ic svg{width:24px;height:24px;stroke-width:1.6;fill:none}
 .voc-card h3{font-family:"Fraunces";font-weight:500;font-size:1.55rem;color:var(--garden);margin-bottom:10px}
 .voc-card:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(40,40,30,.12)}
+
+/* ---- migrated artifacts: press strip, newsletter, collab note, section flowers ---- */
+.collab-note{text-align:center;font-family:"Fraunces",serif;font-style:italic;font-size:1.04rem;color:var(--ink-2);max-width:680px;margin:30px auto 0;line-height:1.55}
+.sec.press{padding:36px 0;background:var(--cream-2);position:relative;overflow:hidden}
+.press-inner{position:relative;z-index:1;text-align:center}
+.press-eyebrow{display:block;font-family:"Fraunces",serif;font-style:italic;font-size:1.06rem;color:var(--honey);margin-bottom:15px}
+.press-logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:13px 32px}
+.press-logos span{position:relative;font-family:"Fraunces",serif;font-weight:500;font-size:1.04rem;color:var(--garden);letter-spacing:.3px}
+.press-logos span:not(:last-child)::after{content:"";position:absolute;right:-17px;top:50%;width:5px;height:5px;border-radius:50%;background:var(--line-2);transform:translateY(-50%)}
+.sec.newsletter{position:relative}
+.news-band{position:relative;overflow:hidden;background:var(--garden);color:#fff;border-radius:20px;padding:48px 40px;text-align:center}
+.news-band h2{color:#fff;font-size:1.75rem;margin-bottom:8px}
+.news-band p{color:rgba(255,255,255,.85);margin:0 auto 24px;max-width:480px}
+.news-band .btn{display:inline-block;background:var(--wheat);color:var(--garden);font-family:"Fraunces",serif;font-weight:600;font-size:1rem;padding:13px 32px;border-radius:30px;text-decoration:none;transition:transform .2s var(--ease),box-shadow .2s;position:relative;z-index:1}
+.news-band .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.22)}
+.news-band h2,.news-band p{position:relative;z-index:1}
+.sec-flowers{position:absolute;pointer-events:none;width:230px;height:auto;z-index:0}
+.press .sec-flowers{left:-34px;bottom:-46px;opacity:.13}
+.news-band .sec-flowers{right:-26px;bottom:-40px;opacity:.22}
+@media(max-width:640px){.press-logos{gap:10px 24px}.press-logos span{font-size:.95rem}.news-band{padding:38px 24px}}
