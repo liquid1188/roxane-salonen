@@ -171,7 +171,7 @@
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.12)}
   .foot-brand{display:flex;align-items:center;gap:11px;font-family:"Fraunces";font-size:1.3rem;color:#fff;margin-bottom:14px}
   .foot-brand .bloom{width:24px;height:24px}
-  .foot-bless{font-family:"Fraunces";font-style:italic;color:#E7DEC9;max-width:24em;line-height:1.6}
+  .foot-bless{font-family:"Fraunces";font-style:italic;color:#F3ECDA;max-width:24em;line-height:1.6}
   footer h5{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--wheat);margin:0 0 16px}
   footer ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
   footer ul a{color:#D7E0CC;font-size:.95rem;transition:color .2s}
@@ -397,3 +397,28 @@
 .post-foot a{color:var(--rose-deep);text-decoration:none;font-weight:600}
 .contact-roles{font-size:.84rem;color:var(--ink-2);line-height:1.5;margin:-2px 0 14px}
 .contact-roles .cr-soul{color:var(--honey)}
+
+/* meadowlark — hops along the hill + flutters a wing */
+.lark{animation:larkhop 12s ease-in-out infinite}
+@keyframes larkhop{
+ 0%,8%,92%,100%{transform:translate(905px,150px)}
+ 14%{transform:translate(918px,142px)}
+ 20%,38%{transform:translate(931px,150px)}
+ 44%{transform:translate(946px,142px)}
+ 50%,66%{transform:translate(960px,150px)}
+ 72%{transform:translate(946px,142px)}
+ 78%{transform:translate(928px,150px)}
+ 86%{transform:translate(914px,142px)}
+}
+.lark-wing{transform-box:fill-box;transform-origin:left center;animation:larkflap 4.5s ease-in-out infinite}
+@keyframes larkflap{0%,58%,100%{transform:rotate(0)}66%{transform:rotate(-26deg)}73%{transform:rotate(-3deg)}80%{transform:rotate(-18deg)}88%{transform:rotate(0)}}
+
+/* post share buttons */
+.post-share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:36px 0 0}
+.ps-label{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--honey);font-weight:600;margin-right:4px}
+.ps-btn{font-family:inherit;font-size:.82rem;color:var(--garden);background:var(--paper-lift);border:1px solid var(--line);border-radius:20px;padding:6px 14px;text-decoration:none;cursor:pointer;transition:border-color .18s,color .18s}
+.ps-btn:hover{border-color:var(--rose);color:var(--rose-deep)}
+/* archive sort */
+.arch-search{width:min(420px,72%);display:inline-block;vertical-align:middle}
+.arch-sort{display:inline-block;vertical-align:middle;padding:13px 16px;border:1px solid var(--line);border-radius:30px;background:var(--paper-lift);font-family:inherit;font-size:.95rem;color:var(--garden);cursor:pointer;margin-left:10px}
+@media(max-width:560px){.arch-sort{margin-left:0;margin-top:12px;width:min(420px,72%)}}
