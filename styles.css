@@ -422,3 +422,9 @@
 .arch-search{width:min(420px,72%);display:inline-block;vertical-align:middle}
 .arch-sort{display:inline-block;vertical-align:middle;padding:13px 16px;border:1px solid var(--line);border-radius:30px;background:var(--paper-lift);font-family:inherit;font-size:.95rem;color:var(--garden);cursor:pointer;margin-left:10px}
 @media(max-width:560px){.arch-sort{margin-left:0;margin-top:12px;width:min(420px,72%)}}
+
+/* footer social icons */
+.foot-social{display:flex;gap:11px;margin-top:18px}
+.foot-social a{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.10);color:#EFE7D2;transition:background .2s,color .2s,transform .2s}
+.foot-social a:hover{background:var(--wheat,#E0A92E);color:var(--garden);transform:translateY(-2px)}
+.foot-social svg{width:17px;height:17px;fill:currentColor}
