@@ -1,0 +1,23 @@
+{
+  "chips": [
+    "Pro-life witness",
+    "Surrender & spiritual enrichment",
+    "The writing life",
+    "Flannery O'Connor",
+    "Faith & family"
+  ],
+  "pillars": [
+    {
+      "title": "Pro-life witness",
+      "desc": "hope, healing, and stories from years of front-line advocacy."
+    },
+    {
+      "title": "Spiritual enrichment",
+      "desc": "surrender as a way of life; she has co-led retreats on this theme."
+    },
+    {
+      "title": "The writing life",
+      "desc": "author presentations for schools and workshops for writers of every age."
+    }
+  ]
+}

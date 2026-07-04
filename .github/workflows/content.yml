@@ -1,0 +1,28 @@
+name: Publish content edits
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'images/album/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render edited content into pages
+        run: python3 scripts/build_content.py
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain '*.html')" ]; then
+            git config user.name "Peace Garden bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add ./*.html
+            git commit -m "Auto: publish content edits from site editor"
+            git push
+          else
+            echo "No change to publish."
+          fi

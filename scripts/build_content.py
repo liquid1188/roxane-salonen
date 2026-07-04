@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+"""Render data/*.json (edited via the /admin visual editor) into marked
+regions of the static HTML. Same pattern as update_substack.py: content
+lives between <!--NAME:START--> ... <!--NAME:END--> markers. Idempotent;
+fails safe (leaves a file untouched on any error). Stdlib only."""
+import json, html, re, sys
+
+def esc(s): return html.escape(s, quote=False)
+
+def inject(path, name, block):
+    h = open(path, encoding='utf-8').read()
+    pat = re.compile(r'<!--%s:START-->.*?<!--%s:END-->' % (name, name), re.S)
+    if not pat.search(h):
+        print(f"WARN: markers {name} missing in {path}"); return False
+    new = pat.sub(lambda m: f'<!--{name}:START-->{block}<!--{name}:END-->', h)
+    if new != h:
+        open(path, 'w', encoding='utf-8').write(new)
+        print(f"updated {name} in {path}")
+    return True
+
+def main():
+    ok = True
+
+    # ----- Welcome / hero (index.html) -----
+    w = json.load(open('data/welcome.json'))
+    roles = ''.join(f'<span>{esc(r)}</span>' for r in w['roles'])
+    ok &= inject('index.html', 'ROLES', f'<div class="hero-roles">{roles}</div>')
+    h1 = (f'<h1 class="hero-h1">{esc(w["headline_start"])} '
+          f'<span class="script">{esc(w["headline_accent"])}</span></h1>')
+    ok &= inject('index.html', 'HEADLINE', h1)
+    wel = (f'<p>{esc(w["welcome_text"])}</p>'
+           f'<span class="welcome-sig">{esc(w["signature"])}</span>')
+    ok &= inject('index.html', 'WELCOME', wel)
+
+    # ----- Featured book (index.html) -----
+    f = json.load(open('data/feature.json'))
+    feat = (f'<div class="feat-cover" style="position:relative">'
+            f'<img src="{f["cover"]}" alt="{esc(f["title"])}">'
+            f'<img class="award-pin" src="{f["badge"]}" alt="Book award" style="width:86px"></div>'
+            f'<div class="feat-body"><div class="eyebrow">{esc(f["eyebrow"])}</div>'
+            f'<h2>{esc(f["title"])}</h2>'
+            f'<p class="feat-quote">&ldquo;{esc(f["quote"])}&rdquo;</p>'
+            f'<p style="color:var(--ink-2);margin:0 0 22px">{esc(f["blurb"])}</p>'
+            f'<a class="btn btn-poppy" href="{f["link"]}" target="_blank" rel="noopener">{esc(f["link_label"])} '
+            f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'
+            f'<path d="M7 17L17 7M7 7h10v10"/></svg></a></div>')
+    ok &= inject('index.html', 'FEATURE', feat)
+
+    # ----- Photo album (photos.html) -----
+    p = json.load(open('data/photos.json'))
+    cells = ''.join(
+        f'<figure class="ph"><img src="{i["image"]}" alt="{esc(i.get("caption",""))}" loading="lazy">'
+        f'<figcaption>{esc(i.get("caption",""))}</figcaption></figure>'
+        for i in p['items'])
+    ok &= inject('photos.html', 'ALBUM', f'<div class="photo-masonry reveal">{cells}</div>')
+
+    # ----- Speaking topics (speaking.html) -----
+    s = json.load(open('data/speaking.json'))
+    chips = ''.join(f'<span>{esc(c)}</span>' for c in s['chips'])
+    ok &= inject('speaking.html', 'TOPICS', f'<div class="topics">{chips}</div>')
+    pil = '<p style="font-size:.97rem">Roxane returns again and again to three wells:</p><p style="font-size:.94rem;color:var(--ink-2)">'
+    pil += '<br><br>'.join(f'<b>{esc(x["title"])}</b> &mdash; {esc(x["desc"])}' for x in s['pillars'])
+    pil += '</p>'
+    ok &= inject('speaking.html', 'PILLARS', pil)
+
+    # ----- Testimonials (awards.html) -----
+    t = json.load(open('data/testimonials.json'))
+    if t['items']:
+        cards = ''.join(
+            f'<div class="award-row reveal" style="grid-template-columns:1fr"><div>'
+            f'<p style="font-family:Fraunces,serif;font-size:1.12rem;font-style:italic;'
+            f'line-height:1.65;margin:0 0 12px">&ldquo;{esc(i["quote"])}&rdquo;</p>'
+            f'<div class="award-work">{esc(i["name"])}'
+            + (f' &middot; {esc(i["role"])}' if i.get('role') else '') +
+            f'</div></div></div>'
+            for i in t['items'])
+        block = ('<div class="sec-head reveal" style="margin-top:56px">'
+                 '<div class="eyebrow">In their words</div><h2>What colleagues say</h2></div>' + cards)
+    else:
+        block = ''
+    ok &= inject('awards.html', 'TESTIMONIALS', block)
+
+    sys.exit(0 if ok else 1)
+
+if __name__ == '__main__':
+    main()

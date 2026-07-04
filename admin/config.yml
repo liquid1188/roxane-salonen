@@ -1,0 +1,102 @@
+backend:
+  name: github
+  repo: liquid1188/roxane-salonen
+  branch: main
+
+# Photos Roxane uploads land here and are referenced from the album.
+media_folder: "images/album"
+public_folder: "images/album"
+
+site_url: https://liquid1188.github.io/roxane-salonen
+display_url: https://liquid1188.github.io/roxane-salonen
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    icon: "home"
+    files:
+      - name: "welcome"
+        label: "Welcome & headline"
+        file: "data/welcome.json"
+        description: "The words at the very top of your site, and your welcome note."
+        fields:
+          - { name: "headline_start", label: "Big headline (first part)", widget: "string", hint: "e.g. 'Finding grace in the'" }
+          - { name: "headline_accent", label: "Big headline (fancy script word)", widget: "string", hint: "e.g. 'ordinary.'" }
+          - name: "roles"
+            label: "Your roles (the small line above the headline)"
+            widget: "list"
+            field: { name: "role", label: "Role", widget: "string" }
+          - { name: "welcome_text", label: "Welcome note", widget: "text" }
+          - { name: "signature", label: "Signature", widget: "string" }
+      - name: "feature"
+        label: "Featured book"
+        file: "data/feature.json"
+        description: "The big book spotlight on your homepage. Swap it out any time."
+        fields:
+          - { name: "eyebrow", label: "Small label", widget: "string", hint: "e.g. 'The newest book'" }
+          - { name: "title", label: "Book title", widget: "string" }
+          - { name: "quote", label: "Pull quote", widget: "string" }
+          - { name: "blurb", label: "Description", widget: "text" }
+          - { name: "cover", label: "Cover image", widget: "image" }
+          - { name: "badge", label: "Award badge image", widget: "image" }
+          - { name: "link", label: "Button link", widget: "string" }
+          - { name: "link_label", label: "Button text", widget: "string" }
+
+  - name: "photos"
+    label: "Photo Album"
+    icon: "photo_library"
+    files:
+      - name: "album"
+        label: "Photo Album"
+        file: "data/photos.json"
+        description: "Add, remove, or reorder photos. Upload new ones right here — drag to reorder."
+        fields:
+          - name: "items"
+            label: "Photos"
+            label_singular: "Photo"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "caption", label: "Caption", widget: "string", required: false }
+
+  - name: "speaking"
+    label: "Speaking"
+    icon: "campaign"
+    files:
+      - name: "topics"
+        label: "Speaking topics"
+        file: "data/speaking.json"
+        description: "The topic chips and your three signature areas on the Speaking page."
+        fields:
+          - name: "chips"
+            label: "Topic chips"
+            widget: "list"
+            field: { name: "chip", label: "Topic", widget: "string" }
+          - name: "pillars"
+            label: "Signature areas"
+            label_singular: "Area"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "desc", label: "One-line description", widget: "string" }
+
+  - name: "awards"
+    label: "Testimonials"
+    icon: "format_quote"
+    files:
+      - name: "testimonials"
+        label: "Testimonials"
+        file: "data/testimonials.json"
+        description: "Endorsements from colleagues — these appear on your Awards page. Paste each quote as it arrives."
+        fields:
+          - name: "items"
+            label: "Testimonials"
+            label_singular: "Testimonial"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { name: "quote", label: "Quote", widget: "text" }
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "role", label: "Role / title (optional)", widget: "string", required: false }
