@@ -434,3 +434,59 @@
 .substack-chip{display:inline-flex;align-items:center;gap:7px;background:#FF6719;color:#fff;font-family:"Hanken Grotesk",sans-serif;font-weight:700;font-size:.92rem;padding:5px 13px 5px 11px;border-radius:8px;vertical-align:middle;box-shadow:0 3px 10px rgba(255,103,25,.32)}
 .substack-chip svg{width:15px;height:15px}
 .archive-substack{margin-top:16px;color:var(--ink-2);font-size:1.02rem}
+
+/* ===== July 2026 revision — Roxane's feedback round ===== */
+/* Script accent (feminine touch) */
+.script{font-family:'Great Vibes',cursive;font-weight:400;letter-spacing:.01em}
+.hero-h1 .script{font-size:1.12em;color:var(--poppy)}
+.welcome-sig{font-family:'Great Vibes',cursive;font-size:1.5rem;color:var(--garden)}
+.eyebrow-script{font-family:'Great Vibes',cursive;font-size:1.6rem;color:var(--rose);display:block;margin-bottom:2px}
+
+/* Bolder tabs */
+.nav-links a{font-size:.9rem;font-weight:700;letter-spacing:.035em}
+
+/* Soft fading photo edge (Marge-style) */
+.portrait-art .frame img{-webkit-mask-image:radial-gradient(120% 120% at 50% 38%,#000 62%,transparent 98%);mask-image:radial-gradient(120% 120% at 50% 38%,#000 62%,transparent 98%)}
+
+/* Hero roles line */
+.hero-roles{font-family:'Hanken Grotesk',sans-serif;font-size:.86rem;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--garden);margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px 0;align-items:center}
+.hero-roles span:not(:last-child)::after{content:"\2022";margin:0 9px;color:var(--wheat)}
+
+/* Award badge pinned to a book cover */
+.cover{position:relative}
+.cover .award-pin{position:absolute;top:-14px;right:-12px;width:74px;height:auto;filter:drop-shadow(0 6px 14px rgba(40,30,10,.30));z-index:3;transition:transform .25s}
+.book:hover .award-pin{transform:scale(1.08) rotate(-4deg)}
+/* Books step forward on hover (aj cattapan) */
+.book{transition:transform .3s cubic-bezier(.2,.8,.3,1)}
+.book:hover{transform:translateY(-8px) scale(1.025)}
+.book:hover .cover{box-shadow:0 26px 54px rgba(40,40,30,.26)}
+
+/* ===== Awards page ===== */
+.award-row{display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:start;background:var(--paper-lift,#fff);border:1px solid var(--line);border-radius:22px;padding:34px 36px;margin-bottom:22px;box-shadow:0 14px 34px rgba(40,40,30,.08)}
+.award-row img{width:150px;height:auto}
+.award-row h3{font-family:Fraunces,serif;font-size:1.5rem;margin:0 0 4px}
+.award-row .award-work{color:var(--poppy);font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.award-row ul{margin:10px 0 0;padding-left:19px;color:var(--ink-2)}
+.award-row ul li{margin-bottom:7px;line-height:1.55}
+.award-note{background:rgba(232,179,58,.12);border:1px dashed var(--wheat);border-radius:16px;padding:22px 26px;color:var(--ink-2);font-size:.95rem}
+@media(max-width:640px){.award-row{grid-template-columns:1fr;gap:16px}.award-row img{width:110px}}
+
+/* ===== Writings page publication cards ===== */
+.pub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.pub-card{background:var(--paper-lift,#fff);border:1px solid var(--line);border-radius:20px;padding:30px 30px 26px;box-shadow:0 12px 30px rgba(40,40,30,.07);display:flex;flex-direction:column;transition:transform .25s}
+.pub-card:hover{transform:translateY(-5px)}
+.pub-card h3{font-family:Fraunces,serif;font-size:1.32rem;margin:0 0 4px}
+.pub-card .pub-outlet{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--garden);margin-bottom:12px}
+.pub-card p{color:var(--ink-2);font-size:.95rem;flex:1;margin:0 0 18px;line-height:1.6}
+
+/* ===== Floating subscribe (appears mid-scroll, dismissible) ===== */
+.float-sub{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140%);z-index:60;background:var(--garden,#2C5A40);color:#fff;border-radius:999px;padding:12px 16px 12px 22px;display:flex;align-items:center;gap:14px;box-shadow:0 18px 44px rgba(20,40,25,.35);transition:transform .5s cubic-bezier(.2,.8,.3,1);max-width:92vw}
+.float-sub.show{transform:translate(-50%,0)}
+.float-sub p{margin:0;font-size:.92rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.float-sub a{background:var(--wheat,#E8B33A);color:#2a1f08;font-weight:700;font-size:.86rem;padding:9px 18px;border-radius:999px;white-space:nowrap}
+.float-sub button{background:none;border:0;color:rgba(255,255,255,.7);cursor:pointer;font-size:1.1rem;line-height:1;padding:4px}
+@media(max-width:520px){.float-sub p{display:none}.float-sub{padding:10px 12px}}
+
+/* Footer patron saint */
+.foot-stein{font-style:italic;color:var(--ink-2);opacity:.85;font-size:.9rem;max-width:520px;margin:18px auto 0;text-align:center;line-height:1.6}
+.foot-stein b{font-style:normal;font-weight:700;display:block;margin-top:6px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
