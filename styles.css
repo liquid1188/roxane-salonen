@@ -576,3 +576,13 @@ footer h5{color:#EBC77A}
 .sub-form button{background:var(--red);color:#fff;border:0;font:inherit;font-weight:700;font-size:.9rem;padding:13px 26px;border-radius:999px;cursor:pointer;transition:background .2s,transform .2s;white-space:nowrap}
 .sub-form button:hover{background:#a02d28;transform:translateY(-1px)}
 .sub-note{font-size:.8rem;opacity:.75;margin-top:12px}
+
+/* ===== Menu fix: 8 tabs, no separators, room to breathe, earlier collapse ===== */
+.nav-links{gap:20px}
+.nav-links a{font-size:.84rem;letter-spacing:.03em}
+.nav-sep{display:none}
+@media(max-width:1080px){
+  .menu-btn{display:block}
+  .nav-links{display:none}
+  .nav-links.open{display:flex}
+}
