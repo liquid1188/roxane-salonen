@@ -454,7 +454,7 @@
 
 /* Award badge pinned to a book cover */
 .cover{position:relative}
-.cover .award-pin{position:absolute;top:-14px;right:-12px;width:74px;height:auto;filter:drop-shadow(0 6px 14px rgba(40,30,10,.30));z-index:3;transition:transform .25s}
+.cover .award-pin{position:absolute;bottom:8px;right:8px;width:48px;height:auto;filter:drop-shadow(0 4px 10px rgba(40,30,10,.35));z-index:3;transition:transform .25s}
 .book:hover .award-pin{transform:scale(1.08) rotate(-4deg)}
 /* Books step forward on hover (aj cattapan) */
 .book{transition:transform .3s cubic-bezier(.2,.8,.3,1)}
@@ -586,3 +586,8 @@ footer h5{color:#EBC77A}
   .nav-links{display:none}
   .nav-links.open{display:flex}
 }
+
+/* Book store link */
+.book-link{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.82rem;font-weight:700;color:var(--red);transition:gap .2s}
+.book-link:hover{gap:10px}
+.book{display:flex;flex-direction:column}
