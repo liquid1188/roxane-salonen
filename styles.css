@@ -591,3 +591,39 @@ footer h5{color:#EBC77A}
 .book-link{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.82rem;font-weight:700;color:var(--red);transition:gap .2s}
 .book-link:hover{gap:10px}
 .book{display:flex;flex-direction:column}
+
+/* ===================== Menu polish (round) ===================== */
+.nav-links{gap:6px}
+.nav-links a{
+  font-size:.82rem;font-weight:600;letter-spacing:.01em;color:var(--ink-2);
+  padding:8px 12px;border-radius:8px;position:relative;
+  transition:color .18s,background .18s;
+}
+.nav-links a:not(.nav-cta):hover{color:var(--red);background:rgba(184,53,47,.07)}
+.nav-links a.active{color:var(--red)}
+.nav-links a.active::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;background:var(--red);border-radius:2px}
+.nav-cta{margin-left:6px}
+@media(max-width:1180px){.nav-links a{padding:8px 9px;font-size:.79rem}}
+@media(max-width:1080px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:12px 20px 18px;box-shadow:0 20px 40px rgba(40,40,30,.12);gap:2px;border-top:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:13px 6px;border-radius:0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .nav-links a.active::after{display:none}
+  .nav-cta{margin:12px 0 0;text-align:center;border-bottom:0!important}
+}
+
+/* ===================== Subscribe: refined (not web-2.0) ===================== */
+.news-band{background:linear-gradient(150deg,#fff 0%,#FBF3EE 100%);border:1px solid var(--line);border-radius:24px}
+.sub-form{gap:0;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:5px 5px 5px 6px;max-width:420px;box-shadow:0 8px 22px rgba(40,40,30,.07);flex-wrap:nowrap}
+.sub-form input{flex:1;min-width:0;border:0;background:transparent;padding:12px 18px;font-size:.92rem}
+.sub-form input:focus{outline:0}
+.sub-form:focus-within{border-color:var(--red);box-shadow:0 8px 22px rgba(184,53,47,.14)}
+.sub-form button{border-radius:999px;padding:12px 24px;font-size:.86rem;letter-spacing:.01em;box-shadow:none;flex:none}
+.sub-form button:hover{transform:none;background:#a02d28}
+@media(max-width:480px){.sub-form{flex-wrap:nowrap}.sub-form button{padding:12px 18px}}
+
+/* ===================== Footer 4-col ===================== */
+.foot-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:480px){.foot-grid{grid-template-columns:1fr 1fr}.foot-brand{grid-column:1/-1}}
