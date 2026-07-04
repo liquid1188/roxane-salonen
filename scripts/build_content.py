@@ -80,6 +80,19 @@ def main():
         block = ''
     ok &= inject('awards.html', 'TESTIMONIALS', block)
 
+
+    # ----- Instagram live feed (photos.html) -----
+    try:
+        ig = json.load(open('data/instagram.json'))
+        if ig.get('enabled') and ig.get('behold_feed_url'):
+            block = (f'<div class="ig-feed reveal"><behold-widget feed-id="{ig["behold_feed_url"]}"></behold-widget>'
+                     f'<script type="module" src="https://w.behold.so/widget.js"></script></div>')
+        else:
+            block = ''
+        ok &= inject('photos.html', 'IGFEED', block)
+    except FileNotFoundError:
+        pass
+
     sys.exit(0 if ok else 1)
 
 if __name__ == '__main__':
