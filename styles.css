@@ -555,3 +555,8 @@ footer h5{color:#EBC77A}
 .foot-stein::before{content:"\2740";display:block;text-align:center;color:var(--wheat);font-size:1.25rem;font-style:normal;margin-bottom:12px;letter-spacing:.4em}
 .foot-stein b{color:var(--wheat);font-size:.72rem;letter-spacing:.2em;margin-top:12px;opacity:.95}
 .foot-bottom{margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);color:#B9C7AE;font-size:.8rem;letter-spacing:.02em}
+
+/* Stein quote: single line on desktop, graceful wrap on mobile */
+.foot-stein{max-width:none;white-space:nowrap;font-size:clamp(.8rem,1.32vw,1.05rem)}
+.foot-stein b{white-space:normal}
+@media(max-width:700px){.foot-stein{white-space:normal;font-size:.95rem;max-width:34em}}
