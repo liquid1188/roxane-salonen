@@ -518,3 +518,24 @@
 .press-band img:hover{filter:grayscale(0);opacity:1}
 .press-also{text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);opacity:.55;margin-top:6px}
 @media(max-width:560px){.press-band{gap:14px 26px}.press-band img{transform:scale(.82)}}
+
+/* ===== Round 3: her red, rose nav separators, Follow Me, Substack ===== */
+:root{--red:#B8352F}
+.eyebrow{color:var(--red)}
+.hero-h1 .script{color:var(--red)}
+.btn-poppy{background:linear-gradient(135deg,#C33F32,#D85A3C);box-shadow:0 10px 26px rgba(184,53,47,.30)}
+.nav-cta{background:var(--red)}
+.nav-cta:hover{background:#a02d28}
+.nav-sep{width:9px;height:9px;color:var(--rose);opacity:.55;flex:none;align-self:center;margin:0 2px}
+.nav-links{display:flex;align-items:center;gap:14px}
+.nav-links .sub-ic{vertical-align:-1px;margin-right:5px}
+@media(max-width:1120px){.nav-sep{display:none}}
+@media(max-width:980px){.nav-links a{font-size:.8rem}}
+.follow-me{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.fm-label{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);margin-right:6px}
+.fm{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid var(--line);box-shadow:0 6px 16px rgba(40,40,30,.08);transition:transform .2s,background .2s}
+.fm svg{width:19px;height:19px;fill:var(--ink-2);transition:fill .2s}
+.fm:hover{transform:translateY(-3px)}
+.fm-sub:hover{background:#FF6719}.fm-fb:hover{background:#1877F2}.fm-ig:hover{background:#E4405F}
+.fm-pin:hover{background:#E60023}.fm-x:hover{background:#111}.fm-sp:hover{background:#1DB954}
+.fm:hover svg{fill:#fff}
