@@ -490,3 +490,11 @@
 /* Footer patron saint */
 .foot-stein{font-style:italic;color:var(--ink-2);opacity:.85;font-size:.9rem;max-width:520px;margin:18px auto 0;text-align:center;line-height:1.6}
 .foot-stein b{font-style:normal;font-weight:700;display:block;margin-top:6px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+
+/* ===== Photo album ===== */
+.photo-masonry{columns:3 300px;column-gap:18px}
+.photo-masonry .ph{break-inside:avoid;margin:0 0 18px;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 10px 26px rgba(40,40,30,.10)}
+.photo-masonry img{width:100%;display:block;transition:transform .4s}
+.photo-masonry .ph:hover img{transform:scale(1.04)}
+.photo-masonry figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;font-size:.8rem;color:#fff;background:linear-gradient(transparent,rgba(20,25,18,.72));opacity:0;transition:opacity .3s}
+.photo-masonry .ph:hover figcaption{opacity:1}
