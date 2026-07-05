@@ -142,3 +142,29 @@ collections:
                   - { name: "label", label: "Article title", widget: "string" }
                   - { name: "url", label: "Link", widget: "string" }
                   - { name: "outlet", label: "Publication", widget: "string" }
+
+  - name: "media"
+    label: "Seen & Heard"
+    icon: "podcasts"
+    files:
+      - name: "media"
+        label: "Media Appearances"
+        file: "data/media.json"
+        description: "TV, radio, podcast, and article appearances. Grouped by type on the Seen & Heard page."
+        fields:
+          - { name: "tv", label: "Television", widget: "list", required: false, summary: "{{fields.outlet}}", fields: [
+              { name: "outlet", label: "Show / outlet", widget: "string" },
+              { name: "title", label: "Episode / title", widget: "string" },
+              { name: "url", label: "Link", widget: "string" } ] }
+          - { name: "radio", label: "Radio", widget: "list", required: false, summary: "{{fields.outlet}}", fields: [
+              { name: "outlet", label: "Show / outlet", widget: "string" },
+              { name: "title", label: "Episode / title", widget: "string" },
+              { name: "url", label: "Link", widget: "string" } ] }
+          - { name: "podcast", label: "Podcasts", widget: "list", required: false, summary: "{{fields.outlet}}", fields: [
+              { name: "outlet", label: "Show / outlet", widget: "string" },
+              { name: "title", label: "Episode / title", widget: "string" },
+              { name: "url", label: "Link", widget: "string" } ] }
+          - { name: "article", label: "Featured Articles", widget: "list", required: false, summary: "{{fields.outlet}}", fields: [
+              { name: "outlet", label: "Publication", widget: "string" },
+              { name: "title", label: "Article title", widget: "string" },
+              { name: "url", label: "Link", widget: "string" } ] }

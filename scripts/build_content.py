@@ -119,6 +119,27 @@ def main():
     except FileNotFoundError:
         pass
 
+
+    # ----- Seen & Heard (media.html) -----
+    try:
+        m = json.load(open('data/media.json'))
+        labels = {'tv':'Television','radio':'Radio','podcast':'Podcasts','article':'Featured Articles'}
+        order = ['tv','radio','podcast','article']
+        out = []
+        for cat in order:
+            items = m.get(cat, [])
+            if not items: continue
+            rows = ''.join(
+                f'<a class="media-row" href="{it["url"]}" target="_blank" rel="noopener">'
+                f'<span class="media-outlet">{esc(it["outlet"])}</span>'
+                f'<span class="media-title">{esc(it["title"])}</span>'
+                f'<svg class="media-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M7 17L17 7M7 7h10v10"/></svg></a>'
+                for it in items)
+            out.append(f'<div class="media-group reveal"><h2 class="media-cat">{labels[cat]}</h2><div class="media-list">{rows}</div></div>')
+        ok &= inject('media.html', 'MEDIA', ''.join(out))
+    except FileNotFoundError:
+        pass
+
     sys.exit(0 if ok else 1)
 
 if __name__ == '__main__':
