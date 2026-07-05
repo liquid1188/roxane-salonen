@@ -1,5 +1,5 @@
 {
-  "enabled": false,
-  "behold_feed_url": "",
-  "note": "Paste the Behold feed embed URL here and set enabled to true once Roxane authorizes Instagram at behold.so"
+  "enabled": true,
+  "behold_feed_url": "fQjMxzs7HKWmFtXvN6PT",
+  "note": "Behold feed ID from Roxane (set up July 5, 2026)"
 }

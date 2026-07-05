@@ -671,3 +671,6 @@ footer h5{color:#EBC77A}
 .foot-credit{text-align:center;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:.76rem;letter-spacing:.03em;color:#9DB090}
 .foot-credit a{color:var(--wheat);font-weight:600;text-decoration:none;transition:color .18s}
 .foot-credit a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* Behold Instagram feed spacing */
+.ig-feed{margin:0 0 46px;min-height:120px}
+.ig-feed-head{margin:2px 0 0}
