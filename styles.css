@@ -668,3 +668,6 @@ footer h5{color:#EBC77A}
 .media-hostcard .eyebrow{color:var(--wheat)}
 .media-hostcard h2{font-family:Fraunces,serif;font-size:1.9rem;margin:4px 0 12px;color:#fff}
 .media-hostcard p{color:rgba(255,255,255,.9);max-width:60ch;margin:0 0 22px;line-height:1.6}
+.foot-credit{text-align:center;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:.76rem;letter-spacing:.03em;color:#9DB090}
+.foot-credit a{color:var(--wheat);font-weight:600;text-decoration:none;transition:color .18s}
+.foot-credit a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
