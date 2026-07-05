@@ -292,9 +292,9 @@
 
 
 
-.voc-card::after{content:"";position:absolute;right:-34px;bottom:-34px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,#C25E72,transparent 70%);opacity:.12;pointer-events:none}
-.voc-card:nth-child(2)::after{background:radial-gradient(circle,#D85A3C,transparent 70%)}
-.voc-card:nth-child(3)::after{background:radial-gradient(circle,#5C84B1,transparent 70%)}
+
+
+
 .voc-ic{width:54px;height:54px;border-radius:50%;border:1.5px solid #C25E72;background:transparent;display:grid;place-items:center;margin-bottom:20px}
 .voc-card:nth-child(2) .voc-ic{border-color:#D85A3C}
 .voc-card:nth-child(3) .voc-ic{border-color:#5C84B1}
