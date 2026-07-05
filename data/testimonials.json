@@ -1,3 +1,34 @@
 {
-  "items": []
+  "items": [
+    {
+      "quote": "When you meet Roxane, she is polite and soft-spoken; when she writes, she is a lion. I am proud to have her on our team, with her passion and powerful voice. Roxane invites our readers to think deeper, wrestle with honesty and grow.",
+      "name": "Bill Marcil Jr.",
+      "role": "CEO & Publisher, Forum Communications Company"
+    },
+    {
+      "quote": "Roxane Salonen is one of those rare talents \u2014 always striving to understand the human heart and offering her voice only when it adds something of substance. Her words were more than just words on paper; they gave me a glimpse into her soul.",
+      "name": "Ramona Trevi\u00f1o",
+      "role": "co-author, Redeemed by Grace"
+    },
+    {
+      "quote": "As the faith reporter for North Dakota's largest newspaper, Roxane often addresses sensitive or controversial topics, but she always handles them with grace and care. Listening to the way she engages her guests is a completely different and complementary experience to reading her words.",
+      "name": "Danielle Teigen",
+      "role": "Features Editor, The Forum"
+    },
+    {
+      "quote": "As a journalist for over 40 years, I can confidently say that Roxane's professionalism is among the best. Always organized, prepared, eloquent, and dedicated to the facts. Any project that includes Roxane will be a project well done.",
+      "name": "Patti Maguire Armstrong",
+      "role": "TV host & co-author, What Would Monica Do?"
+    },
+    {
+      "quote": "She has remained steadfast in her pursuit of truth and accuracy \u2014 not easily swayed, but grounding her work in careful discernment and professional ethics.",
+      "name": "Karen Anne Mahoney",
+      "role": "journalist & co-author, Finding Flannery"
+    },
+    {
+      "quote": "Roxane's personal integrity has always been the underlying force for her writing and speaking; she never compromises it, regardless of her audience. She used each setback as a catalyst for growth.",
+      "name": "Linda Morris",
+      "role": "former colleague & mentor"
+    }
+  ]
 }

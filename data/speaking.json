@@ -1,9 +1,9 @@
 {
   "chips": [
     "Pro-life witness",
+    "Soothing the sorrowing heart",
     "Surrender & spiritual enrichment",
     "The writing life",
-    "Flannery O'Connor",
     "Faith & family"
   ],
   "pillars": [
@@ -12,7 +12,11 @@
       "desc": "hope, healing, and stories from years of front-line advocacy."
     },
     {
-      "title": "Spiritual enrichment",
+      "title": "Soothing the sorrowing heart",
+      "desc": "consolation for those whose loved ones have left the faith \u2014 in the spirit of St. Monica and Our Lady of Sorrows."
+    },
+    {
+      "title": "Surrender & spiritual enrichment",
       "desc": "surrender as a way of life; she has co-led retreats on this theme."
     },
     {

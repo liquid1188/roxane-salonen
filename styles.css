@@ -5,7 +5,7 @@
     --paper-lift:#FFFDF6;
     --sky:#DCEAF0;
     --sky-2:#BFD8E6;
-    --garden:#1E4031;       /* deep garden green - primary */
+    --garden:#1F3A5F;       /* deep prairie navy - primary (was garden green) */
     --garden-2:#2C5A40;
     --leaf:#4E7A52;
     --sage:#8AA081;
@@ -542,7 +542,7 @@
 .fm:hover svg{fill:#fff}
 
 /* ===== Footer refinement ===== */
-footer{background:linear-gradient(180deg,#2C5A40 0%,#22452F 100%);position:relative;overflow:hidden;padding:70px 0 34px}
+footer{background:linear-gradient(180deg,#24466E 0%,#1A3050 100%);position:relative;overflow:hidden;padding:70px 0 34px}
 footer::after{content:"";position:absolute;right:-90px;bottom:-90px;width:340px;height:340px;opacity:.06;pointer-events:none;background-repeat:no-repeat;background-size:contain;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff'%3E%3Cellipse cx='50' cy='24' rx='8' ry='18'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(45 50 50)'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(90 50 50)'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(135 50 50)'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(180 50 50)'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(225 50 50)'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(270 50 50)'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='18' transform='rotate(315 50 50)'/%3E%3Ccircle cx='50' cy='50' r='13'/%3E%3C/g%3E%3C/svg%3E")}
 footer .wrap{position:relative;z-index:1}
 footer{border-top:4px solid transparent;border-image:linear-gradient(90deg,var(--rose),var(--wheat),var(--peacock)) 1}
@@ -664,7 +664,7 @@ footer h5{color:#EBC77A}
 .media-arr{flex:none;color:var(--rose);opacity:0;transition:opacity .18s,transform .18s;align-self:center}
 .media-row:hover .media-arr{opacity:1;transform:translate(2px,-2px)}
 @media(max-width:600px){.media-row{flex-direction:column;gap:3px;padding:13px 14px}.media-outlet{flex:auto}.media-arr{display:none}}
-.media-hostcard{background:linear-gradient(135deg,var(--garden) 0%,#22452F 100%);border-radius:22px;padding:38px 40px;margin-bottom:44px;color:#fff}
+.media-hostcard{background:linear-gradient(135deg,var(--garden) 0%,#1A3050 100%);border-radius:22px;padding:38px 40px;margin-bottom:44px;color:#fff}
 .media-hostcard .eyebrow{color:var(--wheat)}
 .media-hostcard h2{font-family:Fraunces,serif;font-size:1.9rem;margin:4px 0 12px;color:#fff}
 .media-hostcard p{color:rgba(255,255,255,.9);max-width:60ch;margin:0 0 22px;line-height:1.6}
