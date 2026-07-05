@@ -637,8 +637,8 @@ footer h5{color:#EBC77A}
 .enc-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
 .enc-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 14px 34px rgba(40,40,30,.08);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
 .enc-card:hover{transform:translateY(-4px);box-shadow:0 22px 46px rgba(40,40,30,.13)}
-.enc-photo{aspect-ratio:16/10;overflow:hidden;background:var(--cream-2)}
-.enc-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.enc-photo{aspect-ratio:4/3;overflow:hidden;background:var(--cream-2)}
+.enc-photo img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
 .enc-body{padding:24px 26px 26px}
 .enc-body h3{font-family:Fraunces,serif;font-size:1.4rem;margin:0 0 3px}
 .enc-date{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
@@ -716,3 +716,8 @@ footer h5{color:#EBC77A}
 .archive-feature p{color:rgba(255,255,255,.9);margin:0 0 18px;line-height:1.6;max-width:60ch}
 .archive-feature b{color:var(--wheat);font-weight:600}
 @media(max-width:640px){.archive-feature{flex-direction:column;text-align:center;padding:30px 26px}}
+
+/* Instagram widget: match rounded corners of the curated grid */
+.ig-feed behold-widget{--behold-border-radius:16px;--behold-gap:18px}
+.ig-feed behold-widget::part(grid){gap:18px}
+.ig-feed behold-widget::part(media){border-radius:16px;overflow:hidden}
