@@ -454,7 +454,7 @@
 
 /* Award badge pinned to a book cover */
 .cover{position:relative}
-.cover .award-pin{position:absolute;bottom:8px;right:8px;width:48px;height:auto;filter:drop-shadow(0 4px 10px rgba(40,30,10,.35));z-index:3;transition:transform .25s}
+.cover .award-pin{position:absolute;bottom:6px;right:6px;width:38px;height:auto;filter:drop-shadow(0 3px 8px rgba(40,30,10,.4));z-index:3;transition:transform .25s}
 .book:hover .award-pin{transform:scale(1.08) rotate(-4deg)}
 /* Books step forward on hover (aj cattapan) */
 .book{transition:transform .3s cubic-bezier(.2,.8,.3,1)}

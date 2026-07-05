@@ -36,7 +36,7 @@ def main():
     f = json.load(open('data/feature.json'))
     feat = (f'<div class="feat-cover" style="position:relative">'
             f'<img src="{f["cover"]}" alt="{esc(f["title"])}">'
-            f'<img class="award-pin" src="{f["badge"]}" alt="Book award" style="width:86px"></div>'
+            f'<img class="award-pin" src="{f["badge"]}" alt="Book award" style="width:52px;bottom:10px;right:10px;top:auto"></div>'
             f'<div class="feat-body"><div class="eyebrow">{esc(f["eyebrow"])}</div>'
             f'<h2>{esc(f["title"])}</h2>'
             f'<p class="feat-quote">&ldquo;{esc(f["quote"])}&rdquo;</p>'
