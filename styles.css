@@ -738,7 +738,8 @@ footer h5{color:#EBC77A}
 .media-collage-inner{background:var(--cream-2);border:1px solid var(--line);border-radius:20px;padding:28px 26px}
 .mc-label{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--garden);margin-bottom:18px}
 .mc-logos{display:grid;grid-template-columns:1fr 1fr;gap:26px 20px;align-items:center;justify-items:center}
-.mc-logos img{max-width:100%;max-height:52px;width:auto;filter:grayscale(1);opacity:.6;object-fit:contain}
+.mc-logos img{max-width:100%;max-height:44px;width:auto;filter:grayscale(1);opacity:.6;object-fit:contain}
+.mc-logos img.mc-stacked{max-height:78px}
 .mc-note{font-size:.82rem;color:var(--ink-2);line-height:1.55;margin:22px 0 0;font-style:italic}
 @media(max-width:940px){.media-layout{grid-template-columns:1fr}.media-collage{position:static;margin-top:20px}.media-collage-inner{max-width:400px}}
 
