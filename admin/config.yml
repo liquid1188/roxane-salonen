@@ -168,3 +168,29 @@ collections:
               { name: "outlet", label: "Publication", widget: "string" },
               { name: "title", label: "Article title", widget: "string" },
               { name: "url", label: "Link", widget: "string" } ] }
+
+  - name: "cover_stories"
+    label: "Book Cover Stories"
+    icon: "auto_stories"
+    files:
+      - name: "cover_stories"
+        label: "Cover Stories"
+        file: "data/cover_stories.json"
+        description: "The story behind each book cover. Turn on 'Show' once you've added the story."
+        fields:
+          - name: "finding-flannery"
+            label: "Finding Flannery"
+            widget: "object"
+            fields:
+              - { name: "enabled", label: "Show on site", widget: "boolean", default: false }
+              - { name: "story", label: "Cover story", widget: "text", required: false }
+              - { name: "artist_name", label: "Artist name", widget: "string", required: false }
+              - { name: "artist_url", label: "Artist website", widget: "string", required: false }
+          - name: "what-would-monica-do"
+            label: "What Would Monica Do?"
+            widget: "object"
+            fields:
+              - { name: "enabled", label: "Show on site", widget: "boolean", default: false }
+              - { name: "story", label: "Cover story", widget: "text", required: false }
+              - { name: "artist_name", label: "Artist name", widget: "string", required: false }
+              - { name: "artist_url", label: "Artist website", widget: "string", required: false }

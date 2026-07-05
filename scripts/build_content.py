@@ -140,6 +140,26 @@ def main():
     except FileNotFoundError:
         pass
 
+
+    # ----- Cover stories (books.html) -----
+    try:
+        cs = json.load(open('data/cover_stories.json'))
+        for key, c in cs.items():
+            if c.get('enabled') and c.get('story'):
+                artist = ''
+                if c.get('artist_url') and c.get('artist_name'):
+                    artist = (f' <a href="{c["artist_url"]}" target="_blank" rel="noopener" '
+                              f'style="color:var(--red);font-weight:600">Art by {esc(c["artist_name"])}</a>')
+                elif c.get('artist_name'):
+                    artist = f' <span style="font-weight:600">Art by {esc(c["artist_name"])}</span>'
+                blk = (f'<details class="cover-story"><summary>The story behind the cover</summary>'
+                       f'<p>{esc(c["story"])}{artist}</p></details>')
+            else:
+                blk = ''
+            ok &= inject('books.html', f'COVERSTORY:{key}', blk)
+    except FileNotFoundError:
+        pass
+
     sys.exit(0 if ok else 1)
 
 if __name__ == '__main__':

@@ -674,3 +674,10 @@ footer h5{color:#EBC77A}
 /* Behold Instagram feed spacing */
 .ig-feed{margin:0 0 46px;min-height:120px}
 .ig-feed-head{margin:2px 0 0}
+/* Cover story expandable */
+.cover-story{margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+.cover-story summary{cursor:pointer;font-size:.85rem;font-weight:700;color:var(--red);list-style:none}
+.cover-story summary::-webkit-details-marker{display:none}
+.cover-story summary::before{content:"\203A ";font-weight:400}
+.cover-story[open] summary::before{content:"\2039 "}
+.cover-story p{font-size:.9rem;color:var(--ink-2);margin:10px 0 0;line-height:1.6}

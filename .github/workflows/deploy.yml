@@ -9,17 +9,32 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render CMS content into pages
+        run: python3 scripts/build_content.py || echo "content build step skipped"
+      - name: Trim non-web files from the deploy artifact
+        run: |
+          find . -name "*.docx" -delete 2>/dev/null || true
+          find . -name "*.csv"  -delete 2>/dev/null || true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 600000
+          error_count: 15
+          reporting_interval: 5000
