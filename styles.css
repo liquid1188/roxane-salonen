@@ -616,6 +616,9 @@ footer h5{color:#EBC77A}
 
 /* ===================== Subscribe: refined (not web-2.0) ===================== */
 .news-band{background:linear-gradient(150deg,#fff 0%,#FBF3EE 100%);border:1px solid var(--line);border-radius:24px}
+.news-band h2{color:var(--garden)}
+.news-band p,.news-band .sub-note{color:var(--ink-2)}
+.news-band .sub-note a{color:var(--red)}
 .sub-form{gap:0;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:5px 5px 5px 6px;max-width:420px;box-shadow:0 8px 22px rgba(40,40,30,.07);flex-wrap:nowrap}
 .sub-form input{flex:1;min-width:0;border:0;background:transparent;padding:12px 18px;font-size:.92rem}
 .sub-form input:focus{outline:0}
