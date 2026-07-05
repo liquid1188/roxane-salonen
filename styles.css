@@ -764,3 +764,7 @@ footer h5{color:#EBC77A}
 .media-hostcard-actions .hostcard-listen{margin:0}
 .media-hostcard-actions .btn{white-space:nowrap}
 @media(max-width:820px){.media-hostcard{flex-wrap:wrap}.media-hostcard-actions{flex-direction:row;flex-wrap:wrap;align-items:center;width:100%}}
+
+/* About photo caption */
+.about-photo{position:relative}
+.about-caption{display:block;font-size:.78rem;color:var(--ink-2);font-style:italic;margin-top:10px;text-align:center}
