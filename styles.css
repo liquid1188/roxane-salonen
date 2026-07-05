@@ -701,3 +701,18 @@ footer h5{color:#EBC77A}
 @media(max-width:720px){.cta-band-photo{flex-direction:column}.cta-band-photo .cta-photo{flex:auto}.cta-band-photo .cta-photo img{min-height:200px}.cta-band-photo .cta-body{text-align:center}.cta-band-photo .hero-cta{justify-content:center}}
 .btn .sub-mark,.arrow-link .sub-mark{flex:none}
 .sub-form button .sub-mark{vertical-align:-2px}
+
+/* ===== Writings page polish ===== */
+.pub-grid-accent .pub-card{border-top:3px solid var(--rose);position:relative}
+.pub-grid-accent .pub-card:nth-child(2){border-top-color:var(--peacock)}
+.pub-grid-accent .pub-card:nth-child(3){border-top-color:var(--wheat)}
+.pub-grid-accent .pub-card:nth-child(4){border-top-color:#C25E72}
+.pub-grid-accent .pub-card:nth-child(5){border-top-color:#6E9B7A}
+.pub-grid-accent .pub-card:nth-child(6){border-top-color:#FF6719}
+.archive-feature{display:flex;align-items:center;gap:28px;background:linear-gradient(135deg,var(--garden) 0%,#1A3050 100%);color:#fff;border-radius:22px;padding:34px 40px;margin-top:36px}
+.archive-feature-icon{flex:0 0 auto;width:70px;height:70px;border-radius:16px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--wheat)}
+.archive-feature-body{flex:1}
+.archive-feature h2{font-family:Fraunces,serif;font-size:1.6rem;color:#fff;margin:0 0 8px}
+.archive-feature p{color:rgba(255,255,255,.9);margin:0 0 18px;line-height:1.6;max-width:60ch}
+.archive-feature b{color:var(--wheat);font-weight:600}
+@media(max-width:640px){.archive-feature{flex-direction:column;text-align:center;padding:30px 26px}}
