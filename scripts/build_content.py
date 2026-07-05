@@ -93,6 +93,32 @@ def main():
     except FileNotFoundError:
         pass
 
+
+    # ----- Notable Encounters (about.html) -----
+    try:
+        enc = json.load(open('data/encounters.json'))
+        cards = []
+        for i, e in enumerate(enc['items']):
+            links = ''
+            if e.get('links'):
+                links = '<div class="enc-links">' + ''.join(
+                    f'<a href="{l["url"]}" target="_blank" rel="noopener"><span class="enc-outlet">{esc(l["outlet"])}</span>{esc(l["label"])}'
+                    f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M7 17L17 7M7 7h10v10"/></svg></a>'
+                    for l in e['links']) + '</div>'
+            date = f'<span class="enc-date">{esc(e["date"])}</span>' if e.get('date') else ''
+            feat = ' enc-feature' if i == 0 else ''
+            cards.append(
+                f'<article class="enc-card{feat}"><div class="enc-photo"><img src="{e["image"]}" alt="{esc(e["name"])}" loading="lazy"></div>'
+                f'<div class="enc-body"><h3>{esc(e["name"])}</h3>{date}'
+                f'<p>{esc(e["blurb"])}</p>{links}</div></article>')
+        block = ('<section class="sec enc-sec"><div class="wrap">'
+                 '<div class="sec-head reveal"><div class="eyebrow">Notable encounters</div>'
+                 '<h2>Grace, in good company.</h2></div>'
+                 '<div class="enc-grid">' + ''.join(cards) + '</div></div></section>')
+        ok &= inject('about.html', 'ENCOUNTERS', block)
+    except FileNotFoundError:
+        pass
+
     sys.exit(0 if ok else 1)
 
 if __name__ == '__main__':

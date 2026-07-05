@@ -113,3 +113,32 @@ collections:
           - { name: "enabled", label: "Show live feed", widget: "boolean", default: false }
           - { name: "behold_feed_url", label: "Behold feed ID", widget: "string", required: false, hint: "From behold.so after connecting Instagram" }
           - { name: "note", label: "Note (internal)", widget: "string", required: false }
+
+  - name: "encounters"
+    label: "Notable Encounters"
+    icon: "handshake"
+    files:
+      - name: "encounters"
+        label: "Notable Encounters"
+        file: "data/encounters.json"
+        description: "Memorable meetings featured on your About page. The first one is shown large."
+        fields:
+          - name: "items"
+            label: "Encounters"
+            label_singular: "Encounter"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "name", label: "Who", widget: "string" }
+              - { name: "date", label: "Date", widget: "string", required: false }
+              - { name: "blurb", label: "Description", widget: "text" }
+              - name: "links"
+                label: "Related articles"
+                widget: "list"
+                required: false
+                summary: "{{fields.label}}"
+                fields:
+                  - { name: "label", label: "Article title", widget: "string" }
+                  - { name: "url", label: "Link", widget: "string" }
+                  - { name: "outlet", label: "Publication", widget: "string" }

@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "image": "images/pope-leo.jpg",
+      "name": "Pope Leo XIV",
+      "date": "November 5, 2025",
+      "blurb": "Roxane and her husband Troy met the Holy Father in St. Peter's Square during a pilgrimage to Rome \u2014 a golden-ticket moment she has written about since.",
+      "links": [
+        {
+          "label": "I've Got a Golden Ticket",
+          "url": "https://roxanesalonen.substack.com/p/ive-got-a-golden-ticket",
+          "outlet": "Substack"
+        },
+        {
+          "label": "A Blessed Pilgrimage to Meet Pope Leo",
+          "url": "https://www.ncregister.com/blog/a-blessed-pilgrimage-to-meet-pope-leo",
+          "outlet": "National Catholic Register"
+        },
+        {
+          "label": "What Does One Wear to See the Pope?",
+          "url": "https://roxanesalonen.substack.com/p/what-does-one-wear-to-see-the-pope",
+          "outlet": "Substack"
+        }
+      ]
+    },
+    {
+      "image": "images/blog/NEC-Meeting-Scott-Hahn.webp",
+      "name": "Scott Hahn",
+      "date": "",
+      "blurb": "With the theologian and author at the National Eucharistic Congress.",
+      "links": []
+    },
+    {
+      "image": "images/blog/Rox_Cordileone.webp",
+      "name": "Archbishop Salvatore Cordileone",
+      "date": "2015",
+      "blurb": "At the launch of the Marriage Reality Movement.",
+      "links": []
+    }
+  ]
+}
