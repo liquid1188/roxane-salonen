@@ -474,8 +474,8 @@
 
 /* ===== Writings page publication cards ===== */
 .pub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
-.pub-card{background:var(--paper-lift,#fff);border:1px solid var(--line);border-radius:20px;padding:30px 30px 26px;box-shadow:0 12px 30px rgba(40,40,30,.07);display:flex;flex-direction:column;transition:transform .25s}
-.pub-card:hover{transform:translateY(-5px)}
+.pub-card{background:var(--paper-lift,#fff);border:1px solid var(--line);border-radius:20px;padding:30px 30px 26px;box-shadow:0 12px 30px rgba(40,40,30,.07);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;text-decoration:none;color:inherit;cursor:pointer}
+.pub-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(40,40,30,.13)}
 .pub-card h3{font-family:Fraunces,serif;font-size:1.32rem;margin:0 0 4px}
 .pub-card .pub-outlet{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--garden);margin-bottom:12px}
 .pub-card p{color:var(--ink-2);font-size:.95rem;flex:1;margin:0 0 18px;line-height:1.6}
@@ -721,3 +721,23 @@ footer h5{color:#EBC77A}
 .ig-feed behold-widget{--behold-border-radius:16px;--behold-gap:18px}
 .ig-feed behold-widget::part(grid){gap:18px}
 .ig-feed behold-widget::part(media){border-radius:16px;overflow:hidden}
+
+.pub-btn{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;background:var(--garden);color:#fff;font-weight:600;font-size:.86rem;padding:9px 18px;border-radius:999px;transition:background .2s,gap .2s;margin-top:2px}
+.pub-card:hover .pub-btn{background:var(--red);gap:10px}
+
+/* Host card listen badges (fills right/bottom space) */
+.hostcard-listen{display:flex;align-items:center;gap:10px;margin:0 0 20px;flex-wrap:wrap}
+.hostcard-listen span{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.listen-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);color:#fff;font-size:.85rem;font-weight:600;padding:7px 14px;border-radius:999px;transition:background .2s}
+.listen-badge:hover{background:rgba(255,255,255,.2)}
+
+/* Media page two-column: list + logo collage */
+.media-layout{display:grid;grid-template-columns:1fr 260px;gap:44px;align-items:start}
+.media-main{min-width:0}
+.media-collage{position:sticky;top:100px}
+.media-collage-inner{background:var(--cream-2);border:1px solid var(--line);border-radius:20px;padding:28px 26px}
+.mc-label{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--garden);margin-bottom:18px}
+.mc-logos{display:grid;grid-template-columns:1fr 1fr;gap:20px 18px;align-items:center;justify-items:center}
+.mc-logos img{max-width:100%;max-height:34px;width:auto;filter:grayscale(1);opacity:.55}
+.mc-note{font-size:.82rem;color:var(--ink-2);line-height:1.55;margin:22px 0 0;font-style:italic}
+@media(max-width:940px){.media-layout{grid-template-columns:1fr}.media-collage{position:static;margin-top:20px}.media-collage-inner{max-width:400px}}
