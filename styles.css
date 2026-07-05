@@ -691,8 +691,11 @@ footer h5{color:#EBC77A}
 .cover-story[open] summary::before{content:"\2039 "}
 .cover-story p{font-size:.9rem;color:var(--ink-2);margin:10px 0 0;line-height:1.6}
 
-/* Speaking card photo */
-.voc-card-photo{padding-top:0!important;overflow:hidden}
-.voc-card-photo .voc-photo{margin:-1px -30px 22px;height:150px;overflow:hidden}
-.voc-card-photo .voc-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
-.voc-card-photo .voc-ic{display:none}
+
+/* CTA band with speaking photo */
+.cta-band-photo{display:flex;align-items:stretch;gap:0;padding:0!important;overflow:hidden;text-align:left}
+.cta-band-photo .cta-photo{flex:0 0 42%;overflow:hidden}
+.cta-band-photo .cta-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;min-height:280px}
+.cta-band-photo .cta-body{flex:1;padding:clamp(30px,4vw,48px);display:flex;flex-direction:column;justify-content:center}
+.cta-band-photo .hero-cta{justify-content:flex-start}
+@media(max-width:720px){.cta-band-photo{flex-direction:column}.cta-band-photo .cta-photo{flex:auto}.cta-band-photo .cta-photo img{min-height:200px}.cta-band-photo .cta-body{text-align:center}.cta-band-photo .hero-cta{justify-content:center}}
