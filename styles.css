@@ -215,7 +215,7 @@
 /* HERO — arched frame + location badge (from the original build) */
 .portrait-art{width:min(460px,100%)}
 .portrait-art .frame{border-radius:240px 240px 16px 16px;border:7px solid var(--paper-lift);box-shadow:0 30px 72px rgba(40,40,30,.20);aspect-ratio:780/800}
-.portrait-art .frame img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.portrait-art .frame img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center 42%}
 .portrait-art .blob{inset:-5% -7% -8% -5%;border-radius:240px 240px 40px 40px/220px 220px 40px 40px}
 .sprig-top{left:-8px;right:auto;top:-26px;transform:rotate(-14deg)}
 .sprig-bot{display:none}
@@ -515,7 +515,7 @@
 
 /* ===== Press band: real logos, grayscale -> color on hover ===== */
 .press-band{display:grid;grid-template-columns:repeat(4,1fr);align-items:center;justify-items:center;gap:30px 44px;margin:22px auto 10px;max-width:800px}
-.press-band img{filter:grayscale(1);opacity:.6;transition:filter .3s,opacity .3s;width:auto;max-width:100%;flex:0 0 auto;align-self:center}
+.press-band img{filter:grayscale(1);opacity:.6;transition:filter .3s,opacity .3s;width:auto;max-width:100%;max-height:44px}
 .press-band img:hover{filter:grayscale(0);opacity:1}
 .press-also{text-align:center;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);opacity:.55;margin-top:6px}
 @media(max-width:640px){.press-band{grid-template-columns:repeat(2,1fr);gap:24px 20px;max-width:360px}}
