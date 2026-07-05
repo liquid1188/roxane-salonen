@@ -750,9 +750,9 @@ footer h5{color:#EBC77A}
 @media(max-width:820px){.page-head-photo .ph-grid{grid-template-columns:1fr}.page-head-photo .ph-photo{max-width:320px;aspect-ratio:4/3}}
 
 .speak-card-col{display:flex;flex-direction:column;gap:22px}
-.speak-card-row{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:start}
-.speak-photo{border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.28);aspect-ratio:653/900}
-.speak-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.speak-card-row{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:stretch}
+.speak-photo{border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.28)}
+.speak-photo img{width:100%;height:100%;object-fit:cover;object-position:center 12%;display:block}
 
 
 
