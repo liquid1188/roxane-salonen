@@ -113,6 +113,27 @@
       "date": "March 2022",
       "blurb": "The law professor, author, and speaker.",
       "links": []
+    },
+    {
+      "image": "images/encounters/dr-ray-2010.jpg",
+      "name": "Dr. Ray Guarendi",
+      "date": "2010",
+      "blurb": "On air with the EWTN psychologist at Real Presence Radio in Fargo.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/jim-and-joy-2023.jpg",
+      "name": "Jim & Joy Pinto",
+      "date": "2023",
+      "blurb": "On the set of EWTN's Jim and Joy, What Would Monica Do? in hand.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/dr-ray-patti-2024.jpg",
+      "name": "Dr. Ray, again",
+      "date": "2024",
+      "blurb": "Fourteen years later — back with Dr. Ray, this time alongside co-author Patti Maguire Armstrong at Sts. Anne & Joachim in Fargo.",
+      "links": []
     }
   ]
 }
