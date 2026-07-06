@@ -4,7 +4,7 @@
       "image": "images/pope-leo.jpg",
       "name": "Pope Leo XIV",
       "date": "November 5, 2025",
-      "blurb": "Roxane and her husband Troy met the Holy Father in St. Peter's Square during a pilgrimage to Rome \u2014 a golden-ticket moment she has written about since.",
+      "blurb": "Roxane and her husband Troy met the Holy Father in St. Peter's Square during a pilgrimage to Rome — a golden-ticket moment she has written about since.",
       "links": [
         {
           "label": "I've Got a Golden Ticket",
@@ -35,6 +35,83 @@
       "name": "Archbishop Salvatore Cordileone",
       "date": "2015",
       "blurb": "At the launch of the Marriage Reality Movement.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/kate-dicamillo.jpg",
+      "name": "Kate DiCamillo",
+      "date": "",
+      "blurb": "The Newbery Medal–winning children's author — two storytellers crossing paths.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/fr-leo-patalinghug.jpg",
+      "name": "Fr. Leo Patalinghug",
+      "date": "",
+      "blurb": "The priest-chef behind Grace Before Meals.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/mother-dolores-hart.jpg",
+      "name": "Mother Dolores Hart",
+      "date": "",
+      "blurb": "The Hollywood actress turned Benedictine nun, with her memoir The Ear of the Heart.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/archbishop-aquila.jpg",
+      "name": "Archbishop Samuel Aquila",
+      "date": "",
+      "blurb": "Fargo's former bishop, now Archbishop of Denver.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/gianna-emanuela-molla.jpg",
+      "name": "Gianna Emanuela Molla",
+      "date": "",
+      "blurb": "Daughter of St. Gianna Beretta Molla.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/danielle-bean.jpg",
+      "name": "Danielle Bean",
+      "date": "July 2024",
+      "blurb": "The Catholic author and podcast host, at the National Eucharistic Congress.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/alveda-king.jpg",
+      "name": "Alveda King",
+      "date": "November 2017",
+      "blurb": "The pro-life advocate and niece of Dr. Martin Luther King Jr. — Redeemed by Grace in hand.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/bishop-cozzens.jpg",
+      "name": "Bishop Andrew Cozzens",
+      "date": "",
+      "blurb": "The Bishop of Crookston, who led the National Eucharistic Revival.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/stacy-trasancos.jpg",
+      "name": "Dr. Stacy Trasancos",
+      "date": "February 2022",
+      "blurb": "The chemist-turned-Catholic author and educator.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/catherine-hadro.jpg",
+      "name": "Catherine Hadro",
+      "date": "November 2019",
+      "blurb": "The EWTN host, then anchoring Pro-Life Weekly.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/helen-alvare.jpg",
+      "name": "Helen Alvaré",
+      "date": "March 2022",
+      "blurb": "The law professor, author, and speaker.",
       "links": []
     }
   ]
