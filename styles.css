@@ -480,8 +480,8 @@
 .pub-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(40,40,30,.13)}
 .pub-card h3{font-family:Fraunces,serif;font-size:1.32rem;margin:0 0 4px}
 .pub-card .pub-outlet{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--garden);margin-bottom:12px}
-.pub-logo{height:38px;display:flex;align-items:center;margin-bottom:14px}
-.pub-logo img,.pub-logo svg{max-height:38px;max-width:160px;width:auto;height:auto;display:block}
+.pub-logo{height:30px;display:flex;align-items:center;margin-bottom:24px}
+.pub-logo img,.pub-logo svg{height:30px;width:auto;max-width:140px;object-fit:contain;display:block}
 
 .pub-card p{color:var(--ink-2);font-size:.95rem;flex:1;margin:0 0 18px;line-height:1.6}
 
