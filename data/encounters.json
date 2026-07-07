@@ -24,10 +24,24 @@
       ]
     },
     {
-      "image": "images/blog/NEC-Meeting-Scott-Hahn.webp",
-      "name": "Scott Hahn",
-      "date": "",
-      "blurb": "With the theologian and author at the National Eucharistic Congress.",
+      "image": "images/encounters/jim-and-joy-2023.jpg",
+      "name": "Jim & Joy Pinto",
+      "date": "2023",
+      "blurb": "On the set of EWTN's Jim and Joy, What Would Monica Do? in hand.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/dr-ray-2010.jpg",
+      "name": "Dr. Ray Guarendi",
+      "date": "2010",
+      "blurb": "On air with the EWTN psychologist with Real Presence Radio at the 2010 Marian Eucharistic Congress in Fargo.",
+      "links": []
+    },
+    {
+      "image": "images/encounters/dr-ray-patti-2024.jpg",
+      "name": "Dr. Ray, again",
+      "date": "2024",
+      "blurb": "Fourteen years later — back with Dr. Ray, this time alongside co-author Patti Maguire Armstrong at Sts. Anne & Joachim in Fargo.",
       "links": []
     },
     {
@@ -40,7 +54,7 @@
     {
       "image": "images/encounters/kate-dicamillo.jpg",
       "name": "Kate DiCamillo",
-      "date": "",
+      "date": "2011",
       "blurb": "The Newbery Medal–winning children's author — two storytellers crossing paths.",
       "links": []
     },
@@ -54,22 +68,29 @@
     {
       "image": "images/encounters/mother-dolores-hart.jpg",
       "name": "Mother Dolores Hart",
-      "date": "",
+      "date": "2013",
       "blurb": "The Hollywood actress turned Benedictine nun, with her memoir The Ear of the Heart.",
       "links": []
     },
     {
       "image": "images/encounters/archbishop-aquila.jpg",
       "name": "Archbishop Samuel Aquila",
-      "date": "",
-      "blurb": "Fargo's former bishop, now Archbishop of Denver.",
+      "date": "2012",
+      "blurb": "Fargo's former bishop, now retired Archbishop of Denver.",
       "links": []
     },
     {
       "image": "images/encounters/gianna-emanuela-molla.jpg",
       "name": "Gianna Emanuela Molla",
-      "date": "",
+      "date": "2022",
       "blurb": "Daughter of St. Gianna Beretta Molla.",
+      "links": []
+    },
+    {
+      "image": "images/blog/NEC-Meeting-Scott-Hahn.webp",
+      "name": "Scott Hahn",
+      "date": "2024",
+      "blurb": "With the theologian and author at the National Eucharistic Congress.",
       "links": []
     },
     {
@@ -89,7 +110,7 @@
     {
       "image": "images/encounters/bishop-cozzens.jpg",
       "name": "Bishop Andrew Cozzens",
-      "date": "",
+      "date": "2026",
       "blurb": "The Bishop of Crookston, who led the National Eucharistic Revival.",
       "links": []
     },
@@ -112,27 +133,6 @@
       "name": "Helen Alvaré",
       "date": "March 2022",
       "blurb": "The law professor, author, and speaker.",
-      "links": []
-    },
-    {
-      "image": "images/encounters/dr-ray-2010.jpg",
-      "name": "Dr. Ray Guarendi",
-      "date": "2010",
-      "blurb": "On air with the EWTN psychologist at Real Presence Radio in Fargo.",
-      "links": []
-    },
-    {
-      "image": "images/encounters/jim-and-joy-2023.jpg",
-      "name": "Jim & Joy Pinto",
-      "date": "2023",
-      "blurb": "On the set of EWTN's Jim and Joy, What Would Monica Do? in hand.",
-      "links": []
-    },
-    {
-      "image": "images/encounters/dr-ray-patti-2024.jpg",
-      "name": "Dr. Ray, again",
-      "date": "2024",
-      "blurb": "Fourteen years later — back with Dr. Ray, this time alongside co-author Patti Maguire Armstrong at Sts. Anne & Joachim in Fargo.",
       "links": []
     }
   ]

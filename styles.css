@@ -164,6 +164,13 @@
 .about-flow h2{margin:12px 0 22px}
 .about-flow .about-photo{float:left;width:min(46%,430px);margin:8px 40px 16px 0}
 .about-flow::after{content:"";display:block;clear:both}
+.about-flow .about-photo--right{float:right;margin:8px 0 16px 40px;width:min(40%,380px)}
+.name-bubble{max-width:680px;margin:38px auto 0;background:rgba(201,127,160,.10);border:1px solid rgba(201,127,160,.28);border-radius:24px;padding:26px 32px;position:relative}
+.name-bubble::before{content:"";position:absolute;top:-12px;left:56px;width:22px;height:22px;background:inherit;border-left:1px solid rgba(201,127,160,.28);border-top:1px solid rgba(201,127,160,.28);transform:rotate(45deg);background:#FBF3E4}
+.name-bubble .nb-title{font-family:Fraunces,serif;font-weight:700;font-size:1.15rem;margin-bottom:8px;color:var(--garden)}
+.name-bubble p{margin:0;color:var(--ink-2);line-height:1.65}
+@media(max-width:760px){.about-flow .about-photo--right{float:none;width:100%;margin:0 0 22px}}
+
 @media(max-width:760px){.about-flow .about-photo{float:none;width:100%;margin:0 0 22px}}
 
   .about h2{color:var(--garden);font-size:clamp(2rem,3.4vw,2.7rem)}
