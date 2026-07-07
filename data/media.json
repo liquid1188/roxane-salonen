@@ -1,195 +1,225 @@
 {
-  "tv": [
-    {
-      "outlet": "EWTN \u2014 Jim and Joy",
-      "title": "Praying with St. Monica (Episode 1)",
-      "url": "https://youtu.be/HjnDAd2C29c"
-    },
-    {
-      "outlet": "EWTN \u2014 Jim and Joy",
-      "title": "Praying with St. Monica (Episode 2)",
-      "url": "https://youtu.be/hYFA_GzMmxU"
-    },
-    {
-      "outlet": "EWTN News in Depth",
-      "title": "With Mark Irons",
-      "url": "https://youtu.be/UqOmKRIBuGY"
-    },
-    {
-      "outlet": "Shalom World TV",
-      "title": "For Moms Worried About Their Children's Faith",
-      "url": "https://www.shalomworld.org/episode/for-moms-worried-about-their-childrens-faith-roxane-salonen"
-    },
-    {
-      "outlet": "Coming Home Network",
-      "title": "Praying with St. Monica, with Matt Swaim",
-      "url": "https://chnetwork.org/2022/10/06/praying-with-st-monica-for-our-loved-ones-episode-15/"
-    },
-    {
-      "outlet": "CFN",
-      "title": "Television feature",
-      "url": "https://vimeo.com/752605089"
-    }
-  ],
-  "radio": [
-    {
-      "outlet": "Real Presence Radio",
-      "title": "Occasional co-host since 2010",
-      "url": "https://yourcatholicradiostation.com/node/60030"
-    },
-    {
-      "outlet": "Catholic Answers Live",
-      "title": "Radio interview (Nov. 18, 2022)",
-      "url": "https://cdn.catholic.com/wp-content/uploads/ca221118b.mp3"
-    },
-    {
-      "outlet": "Catholic Connection",
-      "title": "With Teresa Tomeo",
-      "url": "https://audio.avemariaradio.net/2022/08/cc_20220818_2.mp3"
-    },
-    {
-      "outlet": "Radio Maria \u2014 Sacred Treasures",
-      "title": "What Would Monica Do?",
-      "url": "https://radiomaria.us/podcast/sacred-treasures/sacred-treasures-august-22-2022-outgoing-cenla-pregnancy-center-director-claire-lemoine-and-kim-lyons-new-director-and-patti-maguire-armstrong-and-roxane-beauclair-co-author-the-book-what-would/"
-    },
-    {
-      "outlet": "Carolina Catholic Radio",
-      "title": "Joyful Echo (Part 1)",
-      "url": "https://www.podpage.com/carolina-catholic-radio-podcast/joyful-echo-10-12-22/"
-    },
-    {
-      "outlet": "Carolina Catholic Radio",
-      "title": "Joyful Echo (Part 2)",
-      "url": "https://youtu.be/m6gYys0Cxxo"
-    },
-    {
-      "outlet": "Katy McGrady",
-      "title": "Live interview",
-      "url": "https://make.headliner.app/download/ff2f7a1f-6c52-4348-92e1-23f45edf67dd"
-    }
-  ],
-  "podcast": [
-    {
-      "outlet": "CatholicMom MomCast",
-      "title": "Meet Roxane Salonen, with Maria Johnson",
-      "url": "https://www.catholicmom.com/catholic-momcast/meet-roxane-salonen-343"
-    },
-    {
-      "outlet": "CatholicMom MomCast",
-      "title": "What Would Monica Do?",
-      "url": "https://www.catholicmom.com/catholic-momcast/what-would-monica-do-207"
-    },
-    {
-      "outlet": "Girlfriends",
-      "title": "Interview with Danielle Bean",
-      "url": "https://girlfriends.fireside.fm/344"
-    },
-    {
-      "outlet": "A Seeking Heart",
-      "title": "With Allison Gingras",
-      "url": "https://aseekingheartwithallisongingras.podbean.com/e/a-seeking-heart-feat-roxane-salonen?"
-    },
-    {
-      "outlet": "How They Love Mary",
-      "title": "With Fr. Edward Looney",
-      "url": "https://howtheylovemary.fireside.fm/whatwouldmonicado"
-    },
-    {
-      "outlet": "Anne DeSantis",
-      "title": "Podcast interview",
-      "url": "https://youtu.be/VajS0S_Wruo"
-    },
-    {
-      "outlet": "Mercy Unbound",
-      "title": "With Bryan Thatcher",
-      "url": "https://youtu.be/7FfsDunUZVg"
-    },
-    {
-      "outlet": "Midday Moms",
-      "title": "Podcast interview",
-      "url": "https://youtu.be/n5-i8la3-LY"
-    },
-    {
-      "outlet": "Busted Halo",
-      "title": "Podcast interview",
-      "url": "https://bustedhalo.com/podcasts"
-    },
-    {
-      "outlet": "Veritas with Joe and Joe",
-      "title": "When Your Kids Leave the Faith",
-      "url": "https://podcasts.apple.com/us/podcast/when-your-kids-leave-the-faith-patti-maguire/id1597112191?i=1000624584261"
-    },
-    {
-      "outlet": "Hear and Now",
-      "title": "What Would Monica Do?",
-      "url": "https://podcasts.apple.com/us/podcast/what-would-monica-do-w-patti-armstrong-and-roxane-salonen/id1476870384?i=1000586229008"
-    },
-    {
-      "outlet": "Stacy and Stacy",
-      "title": "The Book No One Wants to Write (Part 1)",
-      "url": "https://stacy-and-stacy.captivate.fm/episode/what-would-monica-do-the-book-no-one-wants-to-write"
-    },
-    {
-      "outlet": "Stacy and Stacy",
-      "title": "Part 2",
-      "url": "https://open.spotify.com/episode/5UQxYcCNcwJ9u3pu6GvYyB"
-    },
-    {
-      "outlet": "Many Hail Marys at a Time",
-      "title": "Instagram prayer interview",
-      "url": "https://youtu.be/jdjrVUZBCEE"
-    }
-  ],
-  "article": [
-    {
-      "outlet": "Catholic News Agency",
-      "title": "Lessons from St. Monica for Those Whose Children Have Left the Church",
-      "url": "https://www.catholicnewsagency.com/news/255203/lessons-from-saint-monica-for-those-whose-childrena-and-grandchildren-have-left-the-church"
-    },
-    {
-      "outlet": "Aleteia",
-      "title": "These Two Moms Understand Your Sorrow",
-      "url": "https://aleteia.org/2022/09/16/these-two-moms-understand-your-sorrow-if-your-adult-children-have-left-the-faith"
-    },
-    {
-      "outlet": "National Catholic Register",
-      "title": "2 Author Friends Explore What Would Monica Do?",
-      "url": "https://www.ncregister.com/news/2-author-friends-explore-what-would-monica-do"
-    },
-    {
-      "outlet": "National Catholic Register",
-      "title": "Tears of the Heart: The Story Behind the Cover Art",
-      "url": "https://www.ncregister.com/news/tears-of-the-heart-the-story-behind-the-cover-art-of-a-new-book-on-st-monica"
-    },
-    {
-      "outlet": "National Catholic Register",
-      "title": "St. Monica Facebook Group: Your Prayers Will Bring Them Home",
-      "url": "https://www.ncregister.com/blog/st-monica-facebook-group-your-prayers-will-bring-them-home"
-    },
-    {
-      "outlet": "CatholicMom.com",
-      "title": "A Sacred Artist's Prayer",
-      "url": "https://www.catholicmom.com/articles/a-sacred-artists-prayer"
-    },
-    {
-      "outlet": "CatholicMom.com",
-      "title": "Book Review by Susan Ciancio",
-      "url": "https://www.catholicmom.com/articles/book-review-what-would-monica-do"
-    },
-    {
-      "outlet": "W.I.N.E. \u2014 Catholic Vineyard",
-      "title": "Praying Like St. Monica Can Fill in What's Missing",
-      "url": "https://catholicvineyard.com/index.php/2022/11/23/praying-like-st-monica-can-fill-in-whats-missing/"
-    },
-    {
-      "outlet": "Diocese of Fargo",
-      "title": "New Book Helps Those with Loved Ones Who Have Turned from the Faith",
-      "url": "https://www.fargodiocese.org/news/new-book-helps-those-with-loved-ones-who-have-turned-from-the-faith"
-    },
-    {
-      "outlet": "Spiritual Woman",
-      "title": "St. Monica Offers Hope (review by Patrice)",
-      "url": "https://spiritualwomanthoughts.blogspot.com/2022/08/st-monica-offers-hope.html"
-    }
-  ]
+ "tv": [
+  {
+   "outlet": "BEK TV — Ladies of Another View",
+   "title": "Roxane and Karen on Finding Flannery (March 2026)",
+   "url": "https://www.bektv.plus/videos/ladiesofanotherview/2026-03-26"
+  },
+  {
+   "outlet": "EWTN — Jim and Joy",
+   "title": "Praying with St. Monica (Episode 1)",
+   "url": "https://youtu.be/HjnDAd2C29c"
+  },
+  {
+   "outlet": "EWTN — Jim and Joy",
+   "title": "Praying with St. Monica (Episode 2)",
+   "url": "https://youtu.be/hYFA_GzMmxU"
+  },
+  {
+   "outlet": "EWTN News in Depth",
+   "title": "With Mark Irons",
+   "url": "https://youtu.be/UqOmKRIBuGY"
+  },
+  {
+   "outlet": "Shalom World TV",
+   "title": "For Moms Worried About Their Children's Faith",
+   "url": "https://www.shalomworld.org/episode/for-moms-worried-about-their-childrens-faith-roxane-salonen"
+  },
+  {
+   "outlet": "Coming Home Network",
+   "title": "Praying with St. Monica, with Matt Swaim",
+   "url": "https://chnetwork.org/2022/10/06/praying-with-st-monica-for-our-loved-ones-episode-15/"
+  },
+  {
+   "outlet": "CFN",
+   "title": "Television feature",
+   "url": "https://vimeo.com/752605089"
+  }
+ ],
+ "radio": [
+  {
+   "outlet": "Real Presence Radio",
+   "title": "Occasional co-host since 2010",
+   "url": "https://yourcatholicradiostation.com/node/60030"
+  },
+  {
+   "outlet": "Real Presence Radio",
+   "title": "Finding Flannery — on-air conversation (March 2026)",
+   "url": "https://archive.realpresenceradio.com/node/71642"
+  },
+  {
+   "outlet": "Real Presence Radio",
+   "title": "Roxane and Troy on meeting Pope Leo XIV (November 2025)",
+   "url": "https://www.spreaker.com/episode/roxane-troy-salonen-on-real-presence-radio-network-on-their-meeting-with-the-pope-november-18-2025--68644853"
+  },
+  {
+   "outlet": "Son Rise Morning Show",
+   "title": "Finding Flannery (November 2025)",
+   "url": "https://www.spreaker.com/episode/sonrise-morning-show-with-roxane-salonen-november-18-2025--68759382"
+  },
+  {
+   "outlet": "The Dave Palmer Show",
+   "title": "Finding Flannery (November 2025)",
+   "url": "https://www.spreaker.com/episode/dave-palmer-interviewing-roxanne-salonen-on-finding-flannery-november-26-2025--69146587"
+  },
+  {
+   "outlet": "The Catholic Connection",
+   "title": "Finding Flannery, with Teresa Tomeo (December 2025)",
+   "url": "https://www.spreaker.com/episode/roxane-salonen-talks-with-the-catholic-connection-about-finding-flannery-december-15-2025--69105419"
+  },
+  {
+   "outlet": "Catholic Answers Live",
+   "title": "Radio interview (Nov. 18, 2022)",
+   "url": "https://cdn.catholic.com/wp-content/uploads/ca221118b.mp3"
+  },
+  {
+   "outlet": "Catholic Connection",
+   "title": "With Teresa Tomeo",
+   "url": "https://audio.avemariaradio.net/2022/08/cc_20220818_2.mp3"
+  },
+  {
+   "outlet": "Radio Maria — Sacred Treasures",
+   "title": "What Would Monica Do?",
+   "url": "https://radiomaria.us/podcast/sacred-treasures/sacred-treasures-august-22-2022-outgoing-cenla-pregnancy-center-director-claire-lemoine-and-kim-lyons-new-director-and-patti-maguire-armstrong-and-roxane-beauclair-co-author-the-book-what-would/"
+  },
+  {
+   "outlet": "Carolina Catholic Radio",
+   "title": "Joyful Echo (Part 1)",
+   "url": "https://www.podpage.com/carolina-catholic-radio-podcast/joyful-echo-10-12-22/"
+  },
+  {
+   "outlet": "Carolina Catholic Radio",
+   "title": "Joyful Echo (Part 2)",
+   "url": "https://youtu.be/m6gYys0Cxxo"
+  },
+  {
+   "outlet": "Katy McGrady",
+   "title": "Live interview",
+   "url": "https://make.headliner.app/download/ff2f7a1f-6c52-4348-92e1-23f45edf67dd"
+  }
+ ],
+ "podcast": [
+  {
+   "outlet": "Busted Halo",
+   "title": "Finding Flannery interview (December 2025)",
+   "url": "https://soundcloud.com/user-76557793/roxane-salonen-interview-12325"
+  },
+  {
+   "outlet": "CatholicMom MomCast",
+   "title": "Meet Roxane Salonen, with Maria Johnson",
+   "url": "https://www.catholicmom.com/catholic-momcast/meet-roxane-salonen-343"
+  },
+  {
+   "outlet": "CatholicMom MomCast",
+   "title": "What Would Monica Do?",
+   "url": "https://www.catholicmom.com/catholic-momcast/what-would-monica-do-207"
+  },
+  {
+   "outlet": "Girlfriends",
+   "title": "Interview with Danielle Bean",
+   "url": "https://girlfriends.fireside.fm/344"
+  },
+  {
+   "outlet": "A Seeking Heart",
+   "title": "With Allison Gingras",
+   "url": "https://aseekingheartwithallisongingras.podbean.com/e/a-seeking-heart-feat-roxane-salonen?"
+  },
+  {
+   "outlet": "How They Love Mary",
+   "title": "With Fr. Edward Looney",
+   "url": "https://howtheylovemary.fireside.fm/whatwouldmonicado"
+  },
+  {
+   "outlet": "Anne DeSantis",
+   "title": "Podcast interview",
+   "url": "https://youtu.be/VajS0S_Wruo"
+  },
+  {
+   "outlet": "Mercy Unbound",
+   "title": "With Bryan Thatcher",
+   "url": "https://youtu.be/7FfsDunUZVg"
+  },
+  {
+   "outlet": "Midday Moms",
+   "title": "Podcast interview",
+   "url": "https://youtu.be/n5-i8la3-LY"
+  },
+  {
+   "outlet": "Busted Halo",
+   "title": "Podcast interview",
+   "url": "https://bustedhalo.com/podcasts"
+  },
+  {
+   "outlet": "Veritas with Joe and Joe",
+   "title": "When Your Kids Leave the Faith",
+   "url": "https://podcasts.apple.com/us/podcast/when-your-kids-leave-the-faith-patti-maguire/id1597112191?i=1000624584261"
+  },
+  {
+   "outlet": "Hear and Now",
+   "title": "What Would Monica Do?",
+   "url": "https://podcasts.apple.com/us/podcast/what-would-monica-do-w-patti-armstrong-and-roxane-salonen/id1476870384?i=1000586229008"
+  },
+  {
+   "outlet": "Stacy and Stacy",
+   "title": "The Book No One Wants to Write (Part 1)",
+   "url": "https://stacy-and-stacy.captivate.fm/episode/what-would-monica-do-the-book-no-one-wants-to-write"
+  },
+  {
+   "outlet": "Stacy and Stacy",
+   "title": "Part 2",
+   "url": "https://open.spotify.com/episode/5UQxYcCNcwJ9u3pu6GvYyB"
+  },
+  {
+   "outlet": "Many Hail Marys at a Time",
+   "title": "Instagram prayer interview",
+   "url": "https://youtu.be/jdjrVUZBCEE"
+  }
+ ],
+ "article": [
+  {
+   "outlet": "Catholic News Agency",
+   "title": "Lessons from St. Monica for Those Whose Children Have Left the Church",
+   "url": "https://www.catholicnewsagency.com/news/255203/lessons-from-saint-monica-for-those-whose-childrena-and-grandchildren-have-left-the-church"
+  },
+  {
+   "outlet": "Aleteia",
+   "title": "These Two Moms Understand Your Sorrow",
+   "url": "https://aleteia.org/2022/09/16/these-two-moms-understand-your-sorrow-if-your-adult-children-have-left-the-faith"
+  },
+  {
+   "outlet": "National Catholic Register",
+   "title": "2 Author Friends Explore What Would Monica Do?",
+   "url": "https://www.ncregister.com/news/2-author-friends-explore-what-would-monica-do"
+  },
+  {
+   "outlet": "National Catholic Register",
+   "title": "Tears of the Heart: The Story Behind the Cover Art",
+   "url": "https://www.ncregister.com/news/tears-of-the-heart-the-story-behind-the-cover-art-of-a-new-book-on-st-monica"
+  },
+  {
+   "outlet": "National Catholic Register",
+   "title": "St. Monica Facebook Group: Your Prayers Will Bring Them Home",
+   "url": "https://www.ncregister.com/blog/st-monica-facebook-group-your-prayers-will-bring-them-home"
+  },
+  {
+   "outlet": "CatholicMom.com",
+   "title": "A Sacred Artist's Prayer",
+   "url": "https://www.catholicmom.com/articles/a-sacred-artists-prayer"
+  },
+  {
+   "outlet": "CatholicMom.com",
+   "title": "Book Review by Susan Ciancio",
+   "url": "https://www.catholicmom.com/articles/book-review-what-would-monica-do"
+  },
+  {
+   "outlet": "W.I.N.E. — Catholic Vineyard",
+   "title": "Praying Like St. Monica Can Fill in What's Missing",
+   "url": "https://catholicvineyard.com/index.php/2022/11/23/praying-like-st-monica-can-fill-in-whats-missing/"
+  },
+  {
+   "outlet": "Spiritual Woman",
+   "title": "St. Monica Offers Hope (review by Patrice)",
+   "url": "https://spiritualwomanthoughts.blogspot.com/2022/08/st-monica-offers-hope.html"
+  }
+ ]
 }
