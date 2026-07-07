@@ -67,9 +67,8 @@ def main():
     t = json.load(open('data/testimonials.json'))
     if t['items']:
         cards = ''.join(
-            f'<div class="award-row reveal" style="grid-template-columns:1fr"><div>'
-            f'<p style="font-family:Fraunces,serif;font-size:1.12rem;font-style:italic;'
-            f'line-height:1.65;margin:0 0 12px">&ldquo;{esc(i["quote"])}&rdquo;</p>'
+            f'<div class="award-row award-row--quote reveal"><div>'
+            f'<p class="t-quote">&ldquo;{esc(i["quote"])}&rdquo;</p>'
             f'<div class="award-work">{esc(i["name"])}'
             + (f' &middot; {esc(i["role"])}' if i.get('role') else '') +
             f'</div></div></div>'

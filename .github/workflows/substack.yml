@@ -48,6 +48,8 @@ jobs:
           ref: main
       - name: Render CMS content into pages
         run: python3 scripts/build_content.py || echo "content build step skipped"
+      - name: Validate site (blocks deploy on failure)
+        run: python3 scripts/validate_site.py
       - name: Trim non-web files from the deploy artifact
         run: |
           find . -name "*.docx" -delete 2>/dev/null || true
