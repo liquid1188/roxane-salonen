@@ -790,6 +790,6 @@ footer h5{color:#EBC77A}
 
 @media(max-width:560px){.enc-grid{grid-template-columns:1fr}}
 
-.ph-photo--natural{aspect-ratio:auto;max-height:none}
-.ph-photo--natural img{height:auto;object-fit:unset;object-position:unset;display:block}
-@media(max-width:900px){.ph-photo--natural{aspect-ratio:auto;max-width:100%}}
+.page-head-photo .ph-photo--natural{aspect-ratio:auto;max-height:none;max-width:none}
+.page-head-photo .ph-photo--natural img{height:auto;object-fit:unset;object-position:unset;display:block}
+@media(max-width:900px){.page-head-photo .ph-photo--natural{aspect-ratio:auto;max-width:100%}}
