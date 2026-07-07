@@ -797,3 +797,7 @@ footer h5{color:#EBC77A}
 
 .speaking .btn-poppy{background:#D85A3C;box-shadow:0 10px 26px rgba(216,90,60,.32)}
 .speaking .btn-poppy:hover{background:#E2703F}
+
+.media-head-photo{width:170px;flex:none}
+.media-head-photo img{width:100%;height:auto;display:block;border-radius:18px;box-shadow:0 16px 38px rgba(40,40,30,.16)}
+@media(max-width:700px){.page-head .inner{grid-template-columns:1fr!important}.media-head-photo{width:150px;margin-top:6px}}
