@@ -803,3 +803,10 @@ footer h5{color:#EBC77A}
 @media(max-width:700px){.page-head .inner{grid-template-columns:1fr!important}.media-head-photo{width:150px;margin-top:6px}}
 
 .speak-grid > div:first-child{display:flex;flex-direction:column}
+
+.passage-mark{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.pm-bloom{width:30px;height:30px;color:var(--rose);flex:none;filter:drop-shadow(0 3px 8px rgba(201,90,110,.25))}
+.pm-name{font-family:'Hanken Grotesk',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--garden)}
+.pm-name::after{content:"";display:inline-block;width:26px;height:1px;background:linear-gradient(90deg,var(--garden),transparent);margin:0 2px 4px 12px;vertical-align:middle}
+.pm-tag{font-family:'Great Vibes',cursive;font-size:1.62rem;line-height:1;color:var(--rose);margin-top:-4px}
+@media(max-width:700px){.passage-mark{gap:9px}.pm-name{font-size:.7rem;letter-spacing:.12em}.pm-name::after{width:14px;margin-left:8px}.pm-tag{font-size:1.35rem}}
