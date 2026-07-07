@@ -828,4 +828,4 @@ footer h5{color:#EBC77A}
 .btn-ghost--dark{color:#fff;border-color:rgba(255,255,255,.35)}
 .sub-mark-ic{vertical-align:-2px;margin-right:7px}
 
-.page-head .inner.ph-split{max-width:none;display:grid;grid-template-columns:minmax(0,620px) auto;justify-content:space-between;gap:44px;align-items:center}
+.page-head .inner.ph-split{max-width:none;display:grid;grid-template-columns:minmax(0,780px) auto;justify-content:space-between;gap:40px;align-items:center}
