@@ -1,0 +1,23 @@
+name: Build archive articles
+on:
+  push:
+    branches: [main]
+    paths: ['data/articles/**']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install markdown
+      - run: python scripts/build_articles.py
+      - name: Commit built pages
+        run: |
+          git config user.name "archive-bot"
+          git config user.email "actions@github.com"
+          git add blog/
+          git diff --cached --quiet || git commit -m "Build archive page(s) from editor"
+          git push

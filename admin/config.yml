@@ -194,3 +194,24 @@ collections:
               - { name: "story", label: "Cover story", widget: "text", required: false }
               - { name: "artist_name", label: "Artist name", widget: "string", required: false }
               - { name: "artist_url", label: "Artist website", widget: "string", required: false }
+
+  - name: "articles"
+    label: "Add an article"
+    label_singular: "article"
+    folder: "data/articles"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{fields.date}}-{{slug}}"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - { name: "title", label: "Title", widget: "string", hint: "The headline, e.g. 'Living Faith: ...'" }
+      - { name: "date", label: "Date published", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - name: "categories"
+        label: "Categories"
+        widget: "select"
+        multiple: true
+        required: false
+        options: ["Faith", "Forum Columns", "Second-chance Sundays", "Sidewalk Stories", "Prayer", "Family", "Outings", "Pro-life", "Celebrations", "Grief", "Writing"]
+      - { name: "excerpt", label: "Short teaser (optional)", widget: "text", required: false, hint: "One or two sentences shown in the archive list. Leave blank to auto-generate." }
+      - { name: "body", label: "Article text", widget: "markdown", hint: "Paste your column here. Bold, italics, and links all work." }
