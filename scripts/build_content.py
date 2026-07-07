@@ -58,8 +58,8 @@ def main():
     s = json.load(open('data/speaking.json'))
     chips = ''.join(f'<span>{esc(c)}</span>' for c in s['chips'])
     ok &= inject('speaking.html', 'TOPICS', f'<div class="topics">{chips}</div>')
-    pil = '<p style="font-size:1rem">Roxane returns again and again to three wells:</p><p style="font-size:.98rem;color:var(--ink)">'
-    pil += '<br><br>'.join(f'<b style="color:var(--red)">{esc(x["title"])}</b> &mdash; {esc(x["desc"])}' for x in s['pillars'])
+    pil = '<p style="font-size:1rem;color:rgba(244,238,226,.92)">Roxane returns again and again to three wells:</p><p style="font-size:.98rem;color:rgba(238,231,216,.88);line-height:1.65">'
+    pil += '<br><br>'.join(f'<b style="color:#F2A48D">{esc(x["title"])}</b> &mdash; {esc(x["desc"])}' for x in s['pillars'])
     pil += '</p>'
     ok &= inject('speaking.html', 'PILLARS', pil)
 

@@ -119,13 +119,14 @@
   .speaking{background:var(--garden);color:#F4EFE2}
   .speaking .eyebrow{color:var(--wheat)}
   .speaking h2{color:#fff}
-  .speak-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+  .speak-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:stretch}
   .speaking p{color:#D9E3D2}
   .speak-list{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:13px}
   .speak-list li{display:flex;gap:12px;align-items:flex-start;color:#E8EFE1;font-size:1rem}
   .speak-list .tick{width:22px;height:22px;border-radius:50%;background:rgba(224,169,46,.2);display:grid;place-items:center;flex:none;margin-top:1px}
   .speak-list .tick svg{width:13px;height:13px;stroke:var(--wheat)}
-  .speak-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:30px}
+  .speak-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:30px;display:flex;flex-direction:column}
+.speak-card > a.btn{margin-top:auto}
   .speak-card h3{font-family:Fraunces,serif;color:#fff;font-size:1.5rem;margin-bottom:12px}
   .speak-card .topics{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 24px}
   .speak-card .topics span{font-size:.78rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#EDE4CF;padding:6px 13px;border-radius:30px}
