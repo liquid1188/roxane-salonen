@@ -5,6 +5,10 @@
       "caption": "Linden walk along the Red River"
     },
     {
+      "image": "images/photos/rome-st-peters.jpg",
+      "caption": "With Troy at St. Peter’s, Rome"
+    },
+    {
       "image": "images/blog/NEC-big-Mass.webp",
       "caption": "Mass at the National Eucharistic Congress"
     },
@@ -13,68 +17,100 @@
       "caption": "The Salonen Seven"
     },
     {
+      "image": "images/photos/siena-2025.jpg",
+      "caption": "Siena, Italy · October 2025"
+    },
+    {
+      "image": "images/photos/san-gimignano-2025.jpg",
+      "caption": "The Tuscan hills near San Gimignano"
+    },
+    {
       "image": "images/blog/Carmel_Roxane-2EDIT.webp",
       "caption": "Roxane at the Carmel of Mary monastery"
+    },
+    {
+      "image": "images/photos/easter-2026-mom.jpg",
+      "caption": "Easter with Mom, Jane Beauclair · 2026"
     },
     {
       "image": "images/blog/Itasca18_FireLeaves-e1534265860191.webp",
       "caption": "Autumn fire, Lake Itasca"
     },
     {
+      "image": "images/photos/dad-adam-2007.jpg",
+      "caption": "With her dad, Robert Beauclair, and son Adam · circa 2007"
+    },
+    {
       "image": "images/blog/M4L2015BethMeB.webp",
       "caption": "March for Life with Beth, 2015"
+    },
+    {
+      "image": "images/photos/bev-salonen-2024.jpg",
+      "caption": "In loving memory — with Bev Salonen, dearest mother-in-law · Mother’s Day 2024"
     },
     {
       "image": "images/blog/cotton_whispers.webp",
       "caption": "Cottonwood whispers"
     },
     {
+      "image": "images/photos/donut-run.jpg",
+      "caption": "Donut run with the family"
+    },
+    {
       "image": "images/blog/Adamconfirmation_hands.webp",
       "caption": "Confirmation"
     },
     {
-      "image": "images/blog/firstday_2010_nick.webp",
-      "caption": "First day of school, 2010"
+      "image": "images/photos/camille-2025.jpg",
+      "caption": "With Camille · June 2025"
     },
     {
       "image": "images/blog/Denver_stonebuilding.webp",
       "caption": "Stone and sky, Denver"
     },
     {
+      "image": "images/photos/joanne-2025.jpg",
+      "caption": "With Joanne · October 2025"
+    },
+    {
       "image": "images/blog/Tulips-and-swingers-2.webp",
       "caption": "Tulips in the park"
     },
     {
-      "image": "images/blog/Nick_with_pumpkin.webp",
-      "caption": "Pumpkin patch season"
+      "image": "images/photos/lent-2025.jpg",
+      "caption": "Ash Wednesday · Lent 2025"
     },
     {
       "image": "images/blog/monastery_heart-25282-2529.webp",
       "caption": "A heart at the monastery"
     },
     {
+      "image": "images/photos/zoey-book.jpg",
+      "caption": "Zoey, supervising the reading"
+    },
+    {
       "image": "images/blog/GreenLakeShoes.webp",
       "caption": "Green Lake, shoes off"
     },
     {
-      "image": "images/blog/bethpiano-25282-2529.webp",
-      "caption": "At the piano"
-    },
-    {
-      "image": "images/blog/lake-fun.webp",
-      "caption": "Lake fun"
+      "image": "images/photos/cardinal.jpg",
+      "caption": "A backyard cardinal"
     },
     {
       "image": "images/blog/FtAbercrombie_TP.webp",
       "caption": "Fort Abercrombie"
     },
     {
+      "image": "images/photos/lilies.jpg",
+      "caption": "Lilies in the garden"
+    },
+    {
       "image": "images/blog/indy_capitol.webp",
       "caption": "Indianapolis"
     },
     {
-      "image": "images/blog/Playground-Nick-in-web-smiling.webp",
-      "caption": "Playground days"
+      "image": "images/photos/butterfly-2025.jpg",
+      "caption": "Butterfly Pavilion · Scottsdale, Arizona, 2025"
     },
     {
       "image": "images/blog/AdventCandleIcon.webp",
@@ -86,7 +122,7 @@
     },
     {
       "image": "images/blog/mothersday_cookies.webp",
-      "caption": "Mother\u2019s Day cookies"
+      "caption": "Mother’s Day cookies"
     }
   ]
 }
