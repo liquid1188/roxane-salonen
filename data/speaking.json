@@ -4,7 +4,7 @@
     "Soothing the sorrowing heart",
     "Surrender & spiritual enrichment",
     "The writing life",
-    "Faith & family"
+    "Marriage & family"
   ],
   "pillars": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "title": "Soothing the sorrowing heart",
-      "desc": "consolation for those whose loved ones have left the faith \u2014 in the spirit of St. Monica and Our Lady of Sorrows."
+      "desc": "consolation for those whose loved ones have left the faith — in the spirit of St. Monica and Our Lady of Sorrows."
     },
     {
       "title": "Surrender & spiritual enrichment",
@@ -22,6 +22,10 @@
     {
       "title": "The writing life",
       "desc": "author presentations for schools and workshops for writers of every age."
+    },
+    {
+      "title": "Marriage & family",
+      "desc": "a special interest close to home — the beauty of lifelong love and the family it anchors."
     }
   ]
 }
