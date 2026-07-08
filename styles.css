@@ -839,3 +839,19 @@ footer h5{color:#EBC77A}
 .sub-form-mc input{font-size:.86rem;padding:10px 16px}
 .sub-form-mc button{background:var(--garden);padding:10px 20px;font-size:.82rem}
 .sub-form-mc button:hover{background:var(--garden);filter:brightness(.92);transform:translateY(-1px)}
+
+/* ---- mobile hero: face-weighted crop ----
+   Full 2:3 portrait is tall; once you scroll, the sticky nav clips her head.
+   Below 900px, crop the framed hero to a square biased toward her face so the
+   face + sunflower necklace stay in view and the folded hands drop away.
+   Desktop (>900px) keeps the full arched portrait untouched. */
+@media(max-width:900px){
+  .portrait-art .frame img{
+    width:100%;
+    height:auto;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position:50% 10%;
+    display:block;
+  }
+}
