@@ -101,8 +101,8 @@ def main():
             links = ''
             if e.get('links'):
                 links = '<div class="enc-links">' + ''.join(
-                    f'<a href="{l["url"]}" target="_blank" rel="noopener"><span class="enc-outlet">{esc(l["outlet"])}</span>{esc(l["label"])}'
-                    f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M7 17L17 7M7 7h10v10"/></svg></a>'
+                    f'<a href="{l["url"]}" target="_blank" rel="noopener"><span class="enc-outlet">{esc(l["outlet"])}</span><span class="enc-title">{esc(l["label"])}'
+                    f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M7 17L17 7M7 7h10v10"/></svg></span></a>'
                     for l in e['links']) + '</div>'
             date = f'<span class="enc-date">{esc(e["date"])}</span>' if e.get('date') else ''
             feat = ' enc-feature' if i == 0 else ''

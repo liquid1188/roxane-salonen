@@ -170,9 +170,9 @@
 .name-bubble::before{content:"";position:absolute;top:-12px;left:56px;width:22px;height:22px;background:inherit;border-left:1px solid rgba(201,127,160,.28);border-top:1px solid rgba(201,127,160,.28);transform:rotate(45deg);background:#FBF3E4}
 .name-bubble .nb-title{font-family:Fraunces,serif;font-weight:700;font-size:1.15rem;margin-bottom:8px;color:var(--garden)}
 .name-bubble p{margin:0;color:var(--ink-2);line-height:1.65}
-@media(max-width:760px){.about-flow .about-photo--right{float:none;width:100%;margin:0 0 22px}}
+@media(max-width:760px){.about-flow .about-photo--right{float:none;width:100%!important;max-width:380px;margin:0 auto 22px}}
 
-@media(max-width:760px){.about-flow .about-photo{float:none;width:100%;margin:0 0 22px}}
+@media(max-width:760px){.about-flow .about-photo{float:none;width:100%!important;max-width:380px;margin:0 auto 22px}}
 
   .about h2{color:var(--garden);font-size:clamp(2rem,3.4vw,2.7rem)}
   .about .ital{color:var(--rose-deep)}
@@ -271,10 +271,10 @@
 
 /* books grid: 3 columns, real covers centered */
 .book-grid{grid-template-columns:repeat(3,1fr)}
-.book .cover{display:flex;justify-content:center;align-items:flex-end;background:var(--cream-2);padding:16px;min-height:260px}
+.book .cover{display:flex;justify-content:center;align-items:center;background:var(--cream-2);padding:16px;min-height:240px}
 .book .cover img{width:auto;max-width:100%;max-height:230px;aspect-ratio:auto;height:auto;object-fit:contain;box-shadow:0 12px 26px rgba(40,40,30,.18)}
 @media(max-width:900px){.book-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.book-grid{grid-template-columns:1fr 1fr;gap:14px}}
+@media(max-width:560px){.book-grid{grid-template-columns:1fr 1fr;gap:14px}.book .cover{min-height:0;padding:12px}}
 
 /* contact */
 .contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:start}
@@ -606,7 +606,7 @@ footer h5{color:#EBC77A}
 }
 
 /* Book store link */
-.book-link{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:.84rem;font-weight:600;color:#fff;background:var(--garden);padding:9px 18px;border-radius:999px;transition:background .2s,gap .2s;align-self:flex-start}
+.book-link{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:.84rem;font-weight:600;color:#fff;background:var(--garden);padding:9px 18px;border-radius:999px;transition:background .2s,gap .2s;align-self:flex-start;white-space:nowrap}
 .book-link:hover{gap:10px;background:var(--red)}
 .book{display:flex;flex-direction:column}
 
@@ -661,9 +661,11 @@ footer h5{color:#EBC77A}
 .enc-date{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
 .enc-body p{color:var(--ink-2);font-size:.95rem;line-height:1.6;margin:12px 0 0}
 .enc-links{display:flex;flex-direction:column;gap:9px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
-.enc-links a{display:flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;color:var(--ink);transition:color .18s,gap .18s}
+.enc-links a{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.9rem;font-weight:600;color:var(--ink);transition:color .18s,gap .18s}
 .enc-links a:hover{color:var(--red);gap:11px}
 .enc-outlet{font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--garden);background:rgba(44,90,64,.09);padding:3px 8px;border-radius:6px;flex:none}
+.enc-title{display:inline-flex;align-items:center;gap:6px;min-width:0}
+@media(max-width:620px){.enc-title{flex:1 1 100%}}
 /* Feature: Pope Leo spans full width, photo left */
 .enc-feature{grid-column:1/-1;flex-direction:row}
 .enc-feature .enc-photo{flex:0 0 52%;aspect-ratio:auto}
