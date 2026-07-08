@@ -830,3 +830,10 @@ footer h5{color:#EBC77A}
 
 .page-head .inner.ph-split{max-width:none;display:grid;grid-template-columns:minmax(0,780px) auto;justify-content:space-between;gap:40px;align-items:center}
 .page-head .inner.ph-split p{max-width:none}
+/* Peace Garden (Mailchimp) secondary signup — downgraded under Substack */
+.mc-alt{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:12px}
+.mc-alt-lead{font-size:.82rem;color:var(--ink-2);opacity:.9}
+.sub-form-mc{max-width:340px;box-shadow:0 4px 14px rgba(40,40,30,.05)}
+.sub-form-mc input{font-size:.86rem;padding:10px 16px}
+.sub-form-mc button{background:var(--garden);padding:10px 20px;font-size:.82rem}
+.sub-form-mc button:hover{background:var(--garden);filter:brightness(.92);transform:translateY(-1px)}
