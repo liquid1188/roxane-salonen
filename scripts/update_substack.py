@@ -67,6 +67,11 @@ def main():
             print("no change")
         return 0
     except Exception as e:
+        # Surface as a GitHub Actions warning so a persistent block is visible in the
+        # run summary instead of silently reporting green. Still exit 0 (fail-safe:
+        # never break the deploy over a feed hiccup).
+        print("::warning title=Substack refresh blocked::Could not fetch feed (%s). "
+              "Soul Matters not updated this run." % e)
         print("refresh failed (leaving file unchanged):", e, file=sys.stderr)
         return 0
 
