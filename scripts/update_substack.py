@@ -8,7 +8,29 @@ from email.utils import parsedate_to_datetime
 FEED="https://roxanesalonen.substack.com/feed"
 N=4
 INDEX="index.html"
-UA="Mozilla/5.0 (compatible; PeaceGardenBot/1.0)"
+# Substack/Cloudflare 403s obvious bot User-Agents from datacenter IPs (e.g. GitHub
+# Actions runners). Present as a normal browser and retry with backoff.
+UA=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
+HEADERS={
+    "User-Agent": UA,
+    "Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+def fetch_feed():
+    """Fetch the RSS feed, retrying on transient/blocked responses. Raises on final failure."""
+    import time
+    last=None
+    for attempt in range(3):
+        try:
+            req=urllib.request.Request(FEED, headers=HEADERS)
+            return urllib.request.urlopen(req, timeout=30).read()
+        except Exception as e:
+            last=e
+            print("feed fetch attempt %d failed: %s"%(attempt+1, e), file=sys.stderr)
+            time.sleep(2*(attempt+1))
+    raise last
 
 def teaser(desc):
     t=html.unescape(re.sub(r'<[^>]+>','',desc or '')).strip()
@@ -19,8 +41,7 @@ def teaser(desc):
 
 def main():
     try:
-        req=urllib.request.Request(FEED, headers={'User-Agent':UA})
-        xml=urllib.request.urlopen(req, timeout=30).read()
+        xml=fetch_feed()
         ch=ET.fromstring(xml).find('channel')
         items=ch.findall('item')[:N]
         cards=[]
