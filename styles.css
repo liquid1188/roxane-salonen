@@ -237,7 +237,7 @@
 .hero-badge .bsun{width:30px;height:30px;flex:none}
 .hero-badge h4{font-family:"Fraunces";font-weight:500;font-size:1.05rem;color:var(--garden);line-height:1;margin:0}
 .hero-badge .roles{font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-top:5px}
-@media(max-width:900px){.hero-badge{position:relative;z-index:5;margin:16px auto 0;width:fit-content}}
+@media(max-width:900px){.hero-badge{position:relative;z-index:5;inset:auto;margin:16px auto 0;width:fit-content}}
 
 /* sub-page header */
 .page-head{background:radial-gradient(900px 380px at 82% -12%,var(--sky) 0,transparent 60%),linear-gradient(180deg,#FCF8EE,var(--cream));padding:50px 0 0;border-bottom:1px solid var(--line)}
