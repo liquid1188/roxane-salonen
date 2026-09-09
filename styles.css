@@ -183,7 +183,7 @@
   /* footer */
   footer{background:var(--garden);color:#CFD9C8;padding:64px 0 30px}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.12)}
-  .foot-brand{display:flex;align-items:center;gap:11px;font-family:"Fraunces";font-size:1.3rem;color:#fff;margin-bottom:14px}
+  .foot-brand{display:flex;align-items:center;gap:11px;font-family:"Fraunces";font-size:1.3rem;color:#fff;margin-bottom:14px;text-decoration:none}
   .foot-brand .bloom{width:24px;height:24px}
   .foot-bless{font-family:"Fraunces";font-style:italic;color:#F3ECDA;max-width:24em;line-height:1.6}
   footer h5{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--wheat);margin:0 0 16px}
@@ -841,3 +841,5 @@ footer h5{color:#EBC77A}
 .sub-form-mc button{background:var(--garden);padding:10px 20px;font-size:.82rem}
 .sub-form-mc button:hover{background:var(--garden);filter:brightness(.92);transform:translateY(-1px)}
 
+
+.foot-brand:hover{opacity:.85}
