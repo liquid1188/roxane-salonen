@@ -843,3 +843,5 @@ footer h5{color:#EBC77A}
 
 
 .foot-brand:hover{opacity:.85}
+@media(max-width:640px){.foot-bottom{flex-direction:column;align-items:center;text-align:center;gap:6px;line-height:1.7}.foot-bottom span{display:block;max-width:34ch}}
+footer .view-desktop{font-size:.8rem!important;color:#9FB096!important;opacity:1!important;padding:14px 0 4px!important;text-underline-offset:3px}
