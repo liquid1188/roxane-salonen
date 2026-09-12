@@ -3,9 +3,21 @@
 regions of the static HTML. Same pattern as update_substack.py: content
 lives between <!--NAME:START--> ... <!--NAME:END--> markers. Idempotent;
 fails safe (leaves a file untouched on any error). Stdlib only."""
-import json, html, re, sys
+import json, html, re, sys, os, shutil
 
 def esc(s): return html.escape(s, quote=False)
+
+def asset(p):
+    """Make an asset path site-root-relative.
+
+    The CMS stores paths like "images/photos/rome.jpg". Written as-is, that
+    resolves against the current directory, so the same page works at /photos
+    but 404s every image at /photos/. A leading slash makes it work at both.
+    """
+    p = (p or '').strip()
+    if not p or p.startswith(('/', 'http://', 'https://', 'data:')):
+        return p
+    return '/' + p.lstrip('./')
 
 def inject(path, name, block):
     h = open(path, encoding='utf-8').read()
@@ -35,8 +47,8 @@ def main():
     # ----- Featured book (index.html) -----
     f = json.load(open('data/feature.json'))
     feat = (f'<div class="feat-cover" style="position:relative">'
-            f'<img src="{f["cover"]}" alt="{esc(f["title"])}">'
-            f'<img class="award-pin" src="{f["badge"]}" alt="Book award" style="width:66px;bottom:21%;right:10px;top:auto"></div>'
+            f'<img src="{asset(f["cover"])}" alt="{esc(f["title"])}">'
+            f'<img class="award-pin" src="{asset(f["badge"])}" alt="Book award" style="width:66px;bottom:21%;right:10px;top:auto"></div>'
             f'<div class="feat-body"><div class="eyebrow">{esc(f["eyebrow"])}</div>'
             f'<h2>{esc(f["title"])}</h2>'
             f'<p class="feat-quote">&ldquo;{esc(f["quote"])}&rdquo;</p>'
@@ -49,7 +61,7 @@ def main():
     # ----- Photo album (photos.html) -----
     p = json.load(open('data/photos.json'))
     cells = ''.join(
-        f'<figure class="ph"><img src="{i["image"]}" alt="{esc(i.get("caption",""))}" loading="lazy">'
+        f'<figure class="ph"><img src="{asset(i["image"])}" alt="{esc(i.get("caption",""))}" loading="lazy">'
         f'<figcaption>{esc(i.get("caption",""))}</figcaption></figure>'
         for i in p['items'])
     ok &= inject('photos.html', 'ALBUM', f'<div class="photo-masonry reveal">{cells}</div>')
@@ -107,7 +119,7 @@ def main():
             date = f'<span class="enc-date">{esc(e["date"])}</span>' if e.get('date') else ''
             feat = ' enc-feature' if i == 0 else ''
             cards.append(
-                f'<article class="enc-card{feat}"><div class="enc-photo"><img src="{e["image"]}" alt="{esc(e["name"])}" loading="lazy"></div>'
+                f'<article class="enc-card{feat}"><div class="enc-photo"><img src="{asset(e["image"])}" alt="{esc(e["name"])}" loading="lazy"></div>'
                 f'<div class="enc-body"><h3>{esc(e["name"])}</h3>{date}'
                 f'<p>{esc(e["blurb"])}</p>{links}</div></article>')
         block = ('<section class="sec enc-sec"><div class="wrap">'
@@ -158,6 +170,18 @@ def main():
             ok &= inject('books.html', f'COVERSTORY:{key}', blk)
     except FileNotFoundError:
         pass
+
+    # The site answers both /photos and /photos/, served by photos.html and
+    # photos/index.html. Only the root pages are generated above, so copy each
+    # onto its twin. Without this the two drift: the trailing-slash version
+    # keeps whatever was last committed and never sees new CMS content.
+    for page in ('photos.html', 'speaking.html', 'awards.html', 'about.html',
+                 'media.html', 'books.html', 'index.html'):
+        twin = os.path.join(page[:-5], 'index.html')
+        if page != 'index.html' and os.path.exists(page) and os.path.exists(twin):
+            if open(page, 'rb').read() != open(twin, 'rb').read():
+                shutil.copyfile(page, twin)
+                print(f"mirrored {page} -> {twin}")
 
     sys.exit(0 if ok else 1)
 
